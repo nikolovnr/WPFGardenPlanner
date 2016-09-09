@@ -171,12 +171,19 @@
     <Resource Include="Pictures\Keys.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Resource Include="Pictures\garden.png" />
     <Resource Include="Pictures\garden128.png" />
     <Resource Include="Pictures\garden32.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\LogIn.jpg" />
+=======
+    <Resource Include="Pictures\garden32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\garden128.png" />
+>>>>>>> 60f1680bacb742fdb56eff6384b04793cb4f5f36
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

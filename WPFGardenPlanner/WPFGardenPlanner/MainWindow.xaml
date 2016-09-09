@@ -15,8 +15,14 @@
         <Custom:Ribbon x:Name="rMainMenu" Height="394" VerticalAlignment="Top" >
             <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
                 <Custom:RibbonGroup>
+<<<<<<< HEAD
                     <Custom:RibbonButton LargeImageSource="Pictures\\garden32.png" Label="New Garden" />
                     <Custom:RibbonButton SmallImageSource="Pictures\\garden128.png" Label="Open Garden" />
+=======
+                    <!-- C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\Pictures-->
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/garden32.png" Label="New Garden" />
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/garden128.png" Label="Open Garden" />
+>>>>>>> 60f1680bacb742fdb56eff6384b04793cb4f5f36
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
@@ -26,7 +32,7 @@
 
             </Custom:RibbonTab>
             <Custom:Ribbon.ApplicationMenu>
-                <Custom:RibbonApplicationMenu x:Name="mnuExit" >Exit</Custom:RibbonApplicationMenu>
+                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">Exit</Custom:RibbonApplicationMenu>
                 <!--<Custom:RibbonApplicationMenuItem>Exit</Custom:RibbonApplicationMenuItem>-->
 
             </Custom:Ribbon.ApplicationMenu>
