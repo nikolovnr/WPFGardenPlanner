@@ -1,12 +1,42 @@
-﻿<Window x:Class="WPFGardenPlanner.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFGardenPlanner"
+        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" x:Class="WPFGardenPlanner.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Garden Planner" Height="405.18" Width="720.495" WindowState="Maximized">
+    <!--<Grid>
+
+        <Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    </Grid>-->
+    <DockPanel>
+        <Custom:Ribbon x:Name="rMainMenu" Height="394" VerticalAlignment="Top">
+            <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="images\\garden32.png" Label="New Garden" />
+                    <Custom:RibbonButton SmallImageSource="images\\garden128.png" Label="Open Garden" />
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
+
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuPlant" Header="Plants" KeyTip="P">
+
+            </Custom:RibbonTab>
+            <Custom:Ribbon.ApplicationMenu>
+                <Custom:RibbonApplicationMenu x:Name="mnuExit" >Exit</Custom:RibbonApplicationMenu>
+                <!--<Custom:RibbonApplicationMenuItem>Exit</Custom:RibbonApplicationMenuItem>-->
+
+            </Custom:Ribbon.ApplicationMenu>
+            <!--
+                <Custom:RibbonApplicationMenu KeyTip="G">
+                    <Custom:RibbonApplicationMenuItem Header="New Garden" ImageSource="D:\Nikolay\IPD8\ipd8-12-net-programming-part2\GardenPlanner\GardenPlanner\GardenPlanner\images\garden.png" />
+                </Custom:RibbonApplicationMenu>
+       
+            -->
+        </Custom:Ribbon>
+
+    </DockPanel>
 </Window>
