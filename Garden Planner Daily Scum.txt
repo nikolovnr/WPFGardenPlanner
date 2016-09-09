@@ -36,4 +36,3 @@ Nikolay:
 1- I inserted a Ribbon into project and made some research about different components that can be used with it.
 2- I will start work on window with canvas to draw the garden plan.
 3- I need help on setting up the relative and absolute path for images and other resources of the ribbon components.
-
