@@ -1,0 +1,39 @@
+Garden Planner Daily Scum
+Nathalie Desrosiers & Nikolay Nikolov
+
+
+/////Wednesday: September 7, 2016/////
+Nathalie:
+1- Completed the Garden Planner Proposal.
+2- Create 3 tables and fill them (Plant, Companion, Adversary).
+3- Need help about Git(setting), will see with Nikolay.
+
+Nikolay:
+1- Completed DB Diagram.
+2- Add more fields in SeededPlan table - add functionality to track trough time
+3- Still not quite clear which functionalities will be implemented
+
+
+/////Thursday: September 8, 2016/////
+Nathalie:
+1- I found all ? png pictures, croped them and resized them to 100px tall.
+2- I will create a database and fill the tables with data.
+3- All the questions about database and GitHub can be answered by my partner.
+
+Nikolay:
+1- Database is completed and agreed with Nathalie
+2- I will create the main window of the application - put Ribbon
+3- I have some trouble with setup approptiate properties of the ribbon.
+
+/////Thursday: September 8, 2016/////
+Nathalie:
+1- I completed the database, and filled the [Plant] table.
+2- I will do the plant ribbon.
+3- My partner will send me the tutorial he did to learn how to do his part of the ribbon.
+He needs to explain me about GitHub...
+
+Nikolay:
+1- I inserted a Ribbon into project and made some research about different components that can be used with it.
+2- I will start work on window with canvas to draw the garden plan.
+3- I need help on setting up the relative and absolute path for images and other resources of the ribbon components.
+
