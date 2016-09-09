@@ -98,6 +98,78 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Plants\Artichoke.png" />
+    <Resource Include="Pictures\Plants\Asparagus.png" />
+    <Resource Include="Pictures\Plants\Basil.png" />
+    <Resource Include="Pictures\Plants\BeanDry.png" />
+    <Resource Include="Pictures\Plants\BeanLima.png" />
+    <Resource Include="Pictures\Plants\BeanSoy.png" />
+    <Resource Include="Pictures\Plants\BeanStringBush.png" />
+    <Resource Include="Pictures\Plants\BeanStringPole.png" />
+    <Resource Include="Pictures\Plants\Beet.png" />
+    <Resource Include="Pictures\Plants\Broccoli.png" />
+    <Resource Include="Pictures\Plants\BrusselsSprouts.png" />
+    <Resource Include="Pictures\Plants\Cabbage.png" />
+    <Resource Include="Pictures\Plants\Carrot.png" />
+    <Resource Include="Pictures\Plants\Cauliflower.png" />
+    <Resource Include="Pictures\Plants\Celeriac.png" />
+    <Resource Include="Pictures\Plants\Celery.png" />
+    <Resource Include="Pictures\Plants\Chamomile.png" />
+    <Resource Include="Pictures\Plants\Chard.png" />
+    <Resource Include="Pictures\Plants\Chives.png" />
+    <Resource Include="Pictures\Plants\Cilantro.png" />
+    <Resource Include="Pictures\Plants\Corn.png" />
+    <Resource Include="Pictures\Plants\Cucumber.png" />
+    <Resource Include="Pictures\Plants\Dill.png" />
+    <Resource Include="Pictures\Plants\Eggplant.png" />
+    <Resource Include="Pictures\Plants\Fennel.png" />
+    <Resource Include="Pictures\Plants\garlic.png" />
+    <Resource Include="Pictures\Plants\Kale.png" />
+    <Resource Include="Pictures\Plants\kohlrabi.png" />
+    <Resource Include="Pictures\Plants\Lavender.png" />
+    <Resource Include="Pictures\Plants\Leek.png" />
+    <Resource Include="Pictures\Plants\Lettuce.png" />
+    <Resource Include="Pictures\Plants\Marigold.png" />
+    <Resource Include="Pictures\Plants\Marjoram.png" />
+    <Resource Include="Pictures\Plants\Melon.png" />
+    <Resource Include="Pictures\Plants\Mint.png" />
+    <Resource Include="Pictures\Plants\MorningGlory.png" />
+    <Resource Include="Pictures\Plants\Nasturtium.png" />
+    <Resource Include="Pictures\Plants\Okra.png" />
+    <Resource Include="Pictures\Plants\Onion.png" />
+    <Resource Include="Pictures\Plants\Oregano.png" />
+    <Resource Include="Pictures\Plants\Panais.png" />
+    <Resource Include="Pictures\Plants\Parsley.png" />
+    <Resource Include="Pictures\Plants\Peas.png" />
+    <Resource Include="Pictures\Plants\PeasSnap.png" />
+    <Resource Include="Pictures\Plants\Pepper.png" />
+    <Resource Include="Pictures\Plants\PepperHot.png" />
+    <Resource Include="Pictures\Plants\Potato.png" />
+    <Resource Include="Pictures\Plants\Pumpkin.png" />
+    <Resource Include="Pictures\Plants\Radicchio.png" />
+    <Resource Include="Pictures\Plants\Radish.png" />
+    <Resource Include="Pictures\Plants\Raspberry.png" />
+    <Resource Include="Pictures\Plants\Rhubarb.png" />
+    <Resource Include="Pictures\Plants\Rosemary.png" />
+    <Resource Include="Pictures\Plants\Sage.png" />
+    <Resource Include="Pictures\Plants\Shallot.png" />
+    <Resource Include="Pictures\Plants\Spinash.png" />
+    <Resource Include="Pictures\Plants\Strawberry.png" />
+    <Resource Include="Pictures\Plants\SummerSquash.png" />
+    <Resource Include="Pictures\Plants\Sunflower.png" />
+    <Resource Include="Pictures\Plants\SweetPotato.png" />
+    <Resource Include="Pictures\Plants\Thyme.png" />
+    <Resource Include="Pictures\Plants\Tomato.png" />
+    <Resource Include="Pictures\Plants\Topinambour.png" />
+    <Resource Include="Pictures\Plants\Turnip.png" />
+    <Resource Include="Pictures\Plants\Watermelon.png" />
+    <Resource Include="Pictures\Plants\WinterSquash.png" />
+    <Resource Include="Pictures\Plants\Zucchini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Keys.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
