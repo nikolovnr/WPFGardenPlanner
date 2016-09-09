@@ -12,11 +12,11 @@
         <Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />
     </Grid>-->
     <DockPanel>
-        <Custom:Ribbon x:Name="rMainMenu" Height="394" VerticalAlignment="Top">
+        <Custom:Ribbon x:Name="rMainMenu" Height="394" VerticalAlignment="Top" >
             <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="images\\garden32.png" Label="New Garden" />
-                    <Custom:RibbonButton SmallImageSource="images\\garden128.png" Label="Open Garden" />
+                    <Custom:RibbonButton LargeImageSource="Pictures\\garden32.png" Label="New Garden" />
+                    <Custom:RibbonButton SmallImageSource="Pictures\\garden128.png" Label="Open Garden" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
