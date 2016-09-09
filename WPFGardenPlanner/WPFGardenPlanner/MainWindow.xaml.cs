@@ -25,9 +25,5 @@ namespace WPFGardenPlanner
             InitializeComponent();
         }
 
-        private void mnuExit_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            Close();
-        }
     }
 }
