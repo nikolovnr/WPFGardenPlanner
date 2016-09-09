@@ -36,3 +36,18 @@ Nikolay:
 1- I inserted a Ribbon into project and made some research about different components that can be used with it.
 2- I will start work on window with canvas to draw the garden plan.
 3- I need help on setting up the relative and absolute path for images and other resources of the ribbon components.
+
+
+/////Friday: September 9, 2016/////
+Nathalie:
+1- I completed the database, and filled the [Plant] table.
+2- I will do the plant ribbon.
+3- My partner will send me the tutorial he did to learn how to do his part of the ribbon.
+He needs to explain me about GitHub...
+
+Nikolay:
+1- I inserted a Ribbon into project and made some research about different components that can be used with it.
+2- I will start work on window with canvas to draw the garden plan.
+3- I need help on setting up the relative and absolute path for images and other resources of the ribbon components.
+
+
