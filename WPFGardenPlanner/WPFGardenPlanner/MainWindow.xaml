@@ -24,11 +24,117 @@
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuPlant" Header="Plants" KeyTip="P">
+            <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-Z" KeyTip="V">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Artichoke.png" Label="Artichoke" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Asparagus.png" Label="Asparagus" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BeanDry.png" Label="Dry Bean" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BeanLima.png" Label="Lima Bean" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BeanStringBush.png" Label="Bean Bush" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BeanStringPole.png" Label="Bean Pole" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BeanSoy.png" Label="SoyBean" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Beet.png" Label="Beet" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Broccoli.png" Label="Broccoli" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/BrusselsSprouts.png" Label="Brussels Sprouts" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Cabbage.png" Label="Cabbage" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Carrot.png" Label="Carrot" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Cauliflower.png" Label="Cauliflower" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Celeriac.png" Label="Celeriac" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Celery.png" Label="Celery" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Chard.png" Label="Swiss Chard" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Corn.png" Label="Corn" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Cucumber.png" Label="Cucumber" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Eggplant.png" Label="Eggplant" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Fennel.png" Label="Fennel" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Garlic.png" Label="Garlic" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Kale.png" Label="Kale" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Kohlrabi.png" Label="Kohlrabi" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Leek.png" Label="Leek" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Lettuce.png" Label="Lettuce" />
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuVegetableMZ" Header="Vegetables M-Z" KeyTip="V">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Okra.png" Label="Okra" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Onion.png" Label="Onion" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Parsnip.png" Label="Parsnip" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Peas.png" Label="Peas" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/PeasSnap.png" Label="Peas Snap" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Pepper.png" Label="Sweet Pepper" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/PepperHot.png" Label="Hot Pepper" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Potato.png" Label="Potato" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Pumpkin.png" Label="Pumpkin" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Radicchio.png" Label="Radicchio" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Radish.png" Label="Radish" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Rhubarb.png" Label="Rhubarb" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Shallot.png" Label="Scallion" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Spinash.png" Label="Spinash" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/SummerSquash.png" Label="Summer Squash" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/WinterSquash.png" Label="Winter Squash" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Zucchini.png" Label="Zucchini" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/SweetPotato.png" Label="Sweet Potato" />
+                </Custom:RibbonGroup>
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Tomato.png" Label="Tomato" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Topinambour.png" Label="Topinambour" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Turnip.png" Label="Turnip" />
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuFruit" Header="Fruits" KeyTip="V">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Melon.png" Label="Melon" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Raspberry.png" Label="Raspberry" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Strawberry.png" Label="Strawberry" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Watermelon.png" Label="Watermelon" />
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuHerb" Header="Herbs" KeyTip="V">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Basil.png" Label="Basil" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Chives.png" Label="Chives" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Cilantro.png" Label="Cilantro" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Dill.png" Label="Dill" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Marjoram.png" Label="Marjoram" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Mint.png" Label="Mint" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Oregano.png" Label="Oregano" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Rosemary.png" Label="Rosemary" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Sage.png" Label="Sage" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Thyme.png" Label="Thyme" />
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuFlower" Header="Flowers" KeyTip="V">
+                <Custom:RibbonGroup>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Chamomile.png" Label="Chamomile" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Lavender.png" Label="Lavender" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Marigold.png" Label="Marigold" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/MorningGlory.png" Label="Morning Glory" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Nasturtium.png" Label="Nasturtium" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/WPFGardenPlanner;component/Pictures/Plants/Sunflower.png" Label="Sunflower" />
+                </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:Ribbon.ApplicationMenu>
-                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">Exit</Custom:RibbonApplicationMenu>               
-            </Custom:Ribbon.ApplicationMenu>           
+                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">Exit</Custom:RibbonApplicationMenu>
+            </Custom:Ribbon.ApplicationMenu>
         </Custom:Ribbon>
 
     </DockPanel>

@@ -126,7 +126,7 @@
     <Resource Include="Pictures\Plants\Fennel.png" />
     <Resource Include="Pictures\Plants\garlic.png" />
     <Resource Include="Pictures\Plants\Kale.png" />
-    <Resource Include="Pictures\Plants\kohlrabi.png" />
+    <Resource Include="Pictures\Plants\Kohlrabi.png" />
     <Resource Include="Pictures\Plants\Lavender.png" />
     <Resource Include="Pictures\Plants\Leek.png" />
     <Resource Include="Pictures\Plants\Lettuce.png" />
@@ -139,7 +139,7 @@
     <Resource Include="Pictures\Plants\Okra.png" />
     <Resource Include="Pictures\Plants\Onion.png" />
     <Resource Include="Pictures\Plants\Oregano.png" />
-    <Resource Include="Pictures\Plants\Panais.png" />
+    <Resource Include="Pictures\Plants\Parsnip.png" />
     <Resource Include="Pictures\Plants\Parsley.png" />
     <Resource Include="Pictures\Plants\Peas.png" />
     <Resource Include="Pictures\Plants\PeasSnap.png" />
