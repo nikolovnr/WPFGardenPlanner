@@ -23,13 +23,9 @@ namespace WPFGardenPlanner
             Title = "GardenPlanner";
         }
 
-<<<<<<< HEAD
-       
-=======
         private void mnuExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
             Close();
         }
->>>>>>> 60f1680bacb742fdb56eff6384b04793cb4f5f36
     }
 }
