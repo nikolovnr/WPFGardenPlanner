@@ -155,7 +155,7 @@
     <Resource Include="Pictures\Plants\garden32.png" />
     <Resource Include="Pictures\Plants\garlic.png" />
     <Resource Include="Pictures\Plants\Kale.png" />
-    <Resource Include="Pictures\Plants\kohlrabi.png" />
+    <Resource Include="Pictures\Plants\Kohlrabi.png" />
     <Resource Include="Pictures\Plants\Lavender.png" />
     <Resource Include="Pictures\Plants\Leek.png" />
     <Resource Include="Pictures\Plants\Lettuce.png" />
@@ -168,7 +168,7 @@
     <Resource Include="Pictures\Plants\Okra.png" />
     <Resource Include="Pictures\Plants\Onion.png" />
     <Resource Include="Pictures\Plants\Oregano.png" />
-    <Resource Include="Pictures\Plants\Panais.png" />
+    <Resource Include="Pictures\Plants\Parsnip.png" />
     <Resource Include="Pictures\Plants\Parsley.png" />
     <Resource Include="Pictures\Plants\Peas.png" />
     <Resource Include="Pictures\Plants\PeasSnap.png" />
@@ -198,6 +198,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pictures\WPF.MDI.dll" />
+    <Resource Include="Pictures\Keys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\garden.png" />
+    <Resource Include="Pictures\garden128.png" />
+    <Resource Include="Pictures\garden32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\LogIn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Beds\10x3.png" />
+    <Resource Include="Pictures\Beds\10x4.png" />
+    <Resource Include="Pictures\Beds\12x3.png" />
+    <Resource Include="Pictures\Beds\12x4.png" />
+    <Resource Include="Pictures\Beds\3x3.png" />
+    <Resource Include="Pictures\Beds\4x4.png" />
+    <Resource Include="Pictures\Beds\5x3.png" />
+    <Resource Include="Pictures\Beds\5x4.png" />
+    <Resource Include="Pictures\Beds\6x3.png" />
+    <Resource Include="Pictures\Beds\6x4.png" />
+    <Resource Include="Pictures\Beds\8x3.png" />
+    <Resource Include="Pictures\Beds\8x4.png" />
+    <Resource Include="Pictures\Beds\Pot12.png" />
+    <Resource Include="Pictures\Beds\Pot16.png" />
+    <Resource Include="Pictures\Beds\Pot18.png" />
+    <Resource Include="Pictures\Beds\Pot20.png" />
+    <Resource Include="Pictures\Beds\Pot24.png" />
+    <Resource Include="Pictures\Beds\Pot30.png" />
+    <Resource Include="Pictures\Beds\Pot36.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
