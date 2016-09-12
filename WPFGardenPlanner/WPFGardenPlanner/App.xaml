@@ -1,7 +1,7 @@
-﻿<Application x:Class="WPFGardenPlanner.App"
+﻿<Application x:Class="GardenPlanner.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WPFGardenPlanner"
+             xmlns:local="clr-namespace:GardenPlanner"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

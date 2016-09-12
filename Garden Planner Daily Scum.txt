@@ -1,4 +1,4 @@
-Garden Planner Daily Scum
+Garden Planner Daily Scrum
 Nathalie Desrosiers & Nikolay Nikolov
 
 
@@ -51,3 +51,13 @@ Nikolay:
 3- I need help on setting up the relative and absolute path for images and other resources of the ribbon components.
 
 
+/////Week-end: September 10-11, 2016/////
+Nathalie:
+1- I rode a tutorial about Ribbons. I learned about GitHub conflicts.
+2- I will do the plant ribbon and maybe the bed ribbon.
+3- If I need help, I will have to Google it or text my partner.
+
+Nikolay:
+1- I resolved the problem with relative path to images in ribbon. Faced with some conflicts in repository and we resolved them with Gregory.
+2- I will do the canvas window with drawing the garden plan.
+3- There will be a lot of issues to resolve.
