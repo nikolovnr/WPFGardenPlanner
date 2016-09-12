@@ -1,0 +1,5 @@
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\Example\obj\Debug\Example.csprojResolveAssemblyReference.cache
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\Example\obj\Debug\Controls\ExampleControl.baml
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\Example\obj\Debug\Controls\ExampleControl.g.cs
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\Example\obj\Debug\App.g.cs
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\Example\obj\Debug\Example_MarkupCompile.cache

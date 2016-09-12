@@ -1,0 +1,9 @@
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\bin\Debug\WPF.MDI.dll
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\bin\Debug\WPF.MDI.pdb
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\WPF.MDI_MarkupCompile.cache
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\WPF.MDI_MarkupCompile.lref
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\Themes\Generic.baml
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\WPF.MDI.g.resources
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\WPF.MDI.dll
+C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\WPF.MDI\WPF.MDI\obj\Debug\WPF.MDI.pdb
