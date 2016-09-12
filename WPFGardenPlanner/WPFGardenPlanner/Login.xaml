@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPFGardenPlanner.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGardenPlanner"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="376.011">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="136" Margin="30,67,0,0" VerticalAlignment="Top" Width="101" Source="Pictures/Keys.png"/>
+        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" TextWrapping="Wrap" Text="Email address" TextAlignment="Center"  VerticalAlignment="Top" Width="150"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="192,125,0,0" VerticalAlignment="Top"   Width="150"  />
+        <Button x:Name="buttonLogIn" Content="Log In" HorizontalAlignment="Left" Margin="192,182,0,0" VerticalAlignment="Top" Width="150" Click="buttonLogIn_Click"/>
+        <Label x:Name="labelForgot" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top">
+            <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                Forgot your password?
+            </Hyperlink>
+        </Label>
+        <Label x:Name="labelSignUp" HorizontalAlignment="Left" Margin="292,242,0,0" VerticalAlignment="Top">
+            <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
+                Sign Up
+            </Hyperlink>
+        </Label>
+        <Image x:Name="image1" HorizontalAlignment="Left" Source="Pictures/User.png" Height="23" Margin="160,67,0,0" VerticalAlignment="Top" Width="27"/>
+        <Image x:Name="image2" HorizontalAlignment="Left" Source="Pictures/LockOpen.png" Height="19" Margin="160,128,0,0" VerticalAlignment="Top" Width="27"/>
+        <Label x:Name="labelLogIn" FontSize="24" Content="Log In" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

@@ -36,3 +36,5 @@ C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGard
 C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\obj\Debug\WPFGardenPlanner.g.resources
 C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\obj\Debug\WPFGardenPlanner.Properties.Resources.resources
 C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\obj\Debug\WPFGardenPlanner.csproj.GenerateResource.Cache
+C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\obj\Debug\Login.g.cs
+C:\Users\Nathalie Desrosiers\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\obj\Debug\Login.baml
