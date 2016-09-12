@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WPFGardenPlanner"
         xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" x:Class="WPFGardenPlanner.MainWindow"
         mc:Ignorable="d"
+        xmlns:mdi="clr-namespace:WPF.MDI;assembly=WPF.MDI"
         Title="Garden Planner" Height="405.18" Width="720.495" WindowState="Maximized">
+<<<<<<< HEAD
     <!--<Grid>-->
     <!--<Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />-->
     <!--</Grid>-->
@@ -14,16 +16,29 @@
     
     <DockPanel>
        
+=======
+    <!--<Grid>
+
+        <Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    </Grid>-->
+    <Grid>
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
         <Custom:Ribbon x:Name="rMainMenu" Height="140" VerticalAlignment="Top" >
             <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
                 <Custom:RibbonGroup>
 
                     <!-- C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\Pictures-->
+<<<<<<< HEAD
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" />
                     <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" />
+=======
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" Click="RibbonButton_Click_1" />
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
+            
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/3x3.png" Label="3x3" />
@@ -119,7 +134,11 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Zucchini.png" Label="Zucchini" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SweetPotato.png" Label="Sweet Potato" />
                 </Custom:RibbonGroup>
+<<<<<<< HEAD
                 <Custom:RibbonGroup AllowDrop="True">
+=======
+                <Custom:RibbonGroup>
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Tomato.png" Label="Tomato" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Topinambour.png" Label="Topinambour" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Turnip.png" Label="Turnip" />
@@ -161,8 +180,14 @@
                 <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">Exit</Custom:RibbonApplicationMenu>
             </Custom:Ribbon.ApplicationMenu>
         </Custom:Ribbon>
-       
-  
 
-    </DockPanel>
+        <mdi:MdiContainer x:Name="GardenSchema" Theme="Aero" Margin="0,132,0,-279">
+            <mdi:MdiChild Title="Garden Schema" Background="Green">
+                <Grid>
+                    <Canvas x:Name="cnvGardenPlan" Margin="12" Background="AliceBlue" MouseDown="cnvGardenPlan_MouseDown" MouseMove="cnvGardenPlan_MouseMove" MouseUp="cnvGardenPlan_MouseUp" ClipToBounds="True"/>
+                </Grid>
+            </mdi:MdiChild>
+        </mdi:MdiContainer>
+
+    </Grid>
 </Window>
