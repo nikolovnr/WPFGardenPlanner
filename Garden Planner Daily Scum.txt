@@ -61,3 +61,29 @@ Nikolay:
 1- I resolved the problem with relative path to images in ribbon. Faced with some conflicts in repository and we resolved them with Gregory.
 2- I will do the canvas window with drawing the garden plan.
 3- There will be a lot of issues to resolve.
+
+
+/////Saturday: September 10, 2016/////
+Nathalie:
+1- We fixed some issues.
+2- I will do the plant ribbon.
+3- I rode the tutorial about the ribbon. If I need help, I'll have to Google.
+
+Nikolay:
+1- I used external library to be able to open child window in main window - resize, create multiple windows.
+2- I will try to put different controls in child window and draw in canvas.
+3- I need help to define XAML file for the child window
+
+
+/////Monday: September 12, 2016/////
+Nathalie:
+1- I did the plant & beds menus on the ribbon. I started to take care of companion plants since I did not have access to Internet for a while and could do that easily. I started the Login window too.
+2- I will learn how to drag and drop from the ribbon buttons. If time allows it, I will start to use it for one bed size (3x3).
+3- I will definitely need help about this matter. I will see with my best friend, Google.
+
+Nikolay:
+1- I managet to draw filled rectangles on canvas, save the image on file and show predifined print dialog box.
+2- I will fix some bugs with drawing - screen is not refreshed and drawings stay after resize.
+3- I need help with GitHub SourceTree resolving conflicts.
+
+ 
