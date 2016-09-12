@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace GardenPlanner
+namespace WPFGardenPlanner
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -41,7 +41,7 @@ namespace GardenPlanner
         
         private void mnuExit_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            App.Current.Shutdown();
+            //App.Current.Shutdown();
         }
 
         private void RibbonButton_Click(object sender, RoutedEventArgs e)
