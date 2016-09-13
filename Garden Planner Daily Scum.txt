@@ -25,6 +25,7 @@ Nikolay:
 2- I will create the main window of the application - put Ribbon
 3- I have some trouble with setup approptiate properties of the ribbon.
 
+
 /////Thursday: September 8, 2016/////
 Nathalie:
 1- I completed the database, and filled the [Plant] table.
