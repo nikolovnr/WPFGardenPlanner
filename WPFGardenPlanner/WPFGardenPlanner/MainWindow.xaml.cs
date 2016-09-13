@@ -30,7 +30,7 @@ namespace WPFGardenPlanner
         private List<Point> NewPolygon = null;
         private Point NewPoint;
         */
-
+        bool isDrawingBeds = false;
         private Point startPoint;
         private Rectangle rectSelectArea;
 
@@ -73,7 +73,7 @@ namespace WPFGardenPlanner
             Canvas.SetLeft(rectSelectArea, startPoint.X);
             Canvas.SetTop(rectSelectArea, startPoint.X);
             cnvGardenPlan.Children.Add(rectSelectArea);
-
+            */
         }
 
         private void cnvGardenPlan_MouseMove(object sender, MouseEventArgs e)
@@ -83,7 +83,7 @@ namespace WPFGardenPlanner
             NewPoint = e.GetPosition(cnvGardenPlan);
             cnvGardenPlan.InvalidateVisual();
             */
-
+            /*
             if (e.LeftButton == MouseButtonState.Released || rectSelectArea == null)
                 return;
 
@@ -102,15 +102,17 @@ namespace WPFGardenPlanner
 
             Canvas.SetLeft(rectSelectArea, x);
             Canvas.SetTop(rectSelectArea, y);
+            */
         }
 
         private void cnvGardenPlan_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            rectSelectArea = null;
+            /*rectSelectArea = null;*/
         }
 
         private void RibbonButton_Click_1(object sender, RoutedEventArgs e)
         {
+            /*
             Rect bounds = VisualTreeHelper.GetDescendantBounds(cnvGardenPlan);
             double dpi = 96d;
 
@@ -143,10 +145,12 @@ namespace WPFGardenPlanner
             {
                 MessageBox.Show(err.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            */
         }
 
         private void RibbonButton_Click_2(object sender, RoutedEventArgs e)
         {
+            /*
             try
             {
                 PrintDialog dialog = new PrintDialog();
@@ -159,6 +163,34 @@ namespace WPFGardenPlanner
             {
                 MessageBox.Show(ex.Message, "Print Screen", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+            */
+        }
+
+        private void RibbonButton_Click_GardenBed(object sender, RoutedEventArgs e)
+        {
+            isDrawingBeds = true;
+        }
+
+        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button someButton = sender as Button;
+            if (someButton != null)
+            {
+                if (isDrawingBeds)
+                {
+                    someButton.Background = Brushes.Brown;
+                }
+                else
+                {
+                    Image imgControl = new Image();
+                    var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
+
+                    imgControl.Source = bitmapImage;
+                    someButton.Content = imgControl;
+                }
+            } 
+
         }
     }
 }
