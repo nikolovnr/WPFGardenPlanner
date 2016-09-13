@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFGardenPlanner"
-        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" x:Class="WPFGardenPlanner.MainWindow"
-        mc:Ignorable="d"
+        xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon"
         xmlns:mdi="clr-namespace:WPF.MDI;assembly=WPF.MDI"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:GardenPlanner="clr-namespace:GardenPlanner" x:Class="WPFGardenPlanner.MainWindow"
+        mc:Ignorable="d"
         Title="Garden Planner" Height="405.18" Width="720.495" WindowState="Maximized">
     <!--<Grid>
 
@@ -14,6 +15,11 @@
     </Grid>-->
     <Grid>
         <Custom:Ribbon x:Name="rMainMenu" Height="140" VerticalAlignment="Top" >
+            <Custom:Ribbon.ApplicationMenu>
+                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">
+                    <System:String>Exit</System:String>
+                </Custom:RibbonApplicationMenu>
+            </Custom:Ribbon.ApplicationMenu>
             <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
                 <Custom:RibbonGroup>
 
@@ -23,7 +29,7 @@
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            
+
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/3x3.png" Label="3x3" />
@@ -157,9 +163,6 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sunflower.png" Label="Sunflower" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:Ribbon.ApplicationMenu>
-                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">Exit</Custom:RibbonApplicationMenu>
-            </Custom:Ribbon.ApplicationMenu>
         </Custom:Ribbon>
 
         <mdi:MdiContainer x:Name="GardenSchema" Theme="Aero" Margin="0,132,0,-279">
@@ -169,6 +172,8 @@
                 </Grid>
             </mdi:MdiChild>
         </mdi:MdiContainer>
+
+        <GardenPlanner:MdiContainer HorizontalAlignment="Left" Height="300" Margin="364,171,0,-102" VerticalAlignment="Top" Width="305"/>
 
     </Grid>
 </Window>
