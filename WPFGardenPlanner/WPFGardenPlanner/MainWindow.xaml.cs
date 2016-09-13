@@ -25,147 +25,23 @@ namespace WPFGardenPlanner
     /// 
     public partial class MainWindow : Window
     {
-        /*
-        private List<List<Point>> Polygons = new List<List<Point>>();
-        private List<Point> NewPolygon = null;
-        private Point NewPoint;
-        */
         bool isDrawingBeds = false;
-        private Point startPoint;
-        private Rectangle rectSelectArea;
-
+        Button btnClicked;
+        
         public MainWindow()
         {
             InitializeComponent();
         }
         
-        private void mnuExit_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            //App.Current.Shutdown();
-        }
-
+        
         private void RibbonButton_Click(object sender, RoutedEventArgs e)
         {
             GardenSchema.Children.Add(new WPF.MDI.MdiChild() { Title = "Garden Shema", Background = System.Windows.Media.Brushes.Green, Content =  new Canvas() { Background = Brushes.Green } });
             
         }
         
-        private void cnvGardenPlan_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            /*
-
-            startPoint = e.GetPosition(cnvGardenPlan);
-
-            // Remove the drawn rectanglke if any.
-            // At a time only one rectangle should be there
-            if (rectSelectArea != null)
-                cnvGardenPlan.Children.Remove(rectSelectArea);
-
-            // Initialize the rectangle.
-            // Set border color and width
-            rectSelectArea = new Rectangle
-            {
-                Stroke = Brushes.Brown,
-                Fill = Brushes.Brown,
-                StrokeThickness = 2
-            };
-
-            Canvas.SetLeft(rectSelectArea, startPoint.X);
-            Canvas.SetTop(rectSelectArea, startPoint.X);
-            cnvGardenPlan.Children.Add(rectSelectArea);
-            */
-        }
-
-        private void cnvGardenPlan_MouseMove(object sender, MouseEventArgs e)
-        {
-            /*
-            if (NewPolygon == null) return;
-            NewPoint = e.GetPosition(cnvGardenPlan);
-            cnvGardenPlan.InvalidateVisual();
-            */
-            /*
-            if (e.LeftButton == MouseButtonState.Released || rectSelectArea == null)
-                return;
-
-            var pos = e.GetPosition(cnvGardenPlan);
-
-            // Set the position of rectangle
-            var x = Math.Min(pos.X, startPoint.X);
-            var y = Math.Min(pos.Y, startPoint.Y);
-
-            // Set the dimenssion of the rectangle
-            var w = Math.Max(pos.X, startPoint.X) - x;
-            var h = Math.Max(pos.Y, startPoint.Y) - y;
-
-            rectSelectArea.Width = w;
-            rectSelectArea.Height = h;
-
-            Canvas.SetLeft(rectSelectArea, x);
-            Canvas.SetTop(rectSelectArea, y);
-            */
-        }
-
-        private void cnvGardenPlan_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            /*rectSelectArea = null;*/
-        }
-
-        private void RibbonButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            /*
-            Rect bounds = VisualTreeHelper.GetDescendantBounds(cnvGardenPlan);
-            double dpi = 96d;
-
-
-            RenderTargetBitmap rtb = new RenderTargetBitmap((int)bounds.Width, (int)bounds.Height, dpi, dpi, System.Windows.Media.PixelFormats.Default);
-
-
-            DrawingVisual dv = new DrawingVisual();
-            using (DrawingContext dc = dv.RenderOpen())
-            {
-                VisualBrush vb = new VisualBrush(cnvGardenPlan);
-                dc.DrawRectangle(vb, null, new Rect(new Point(), bounds.Size));
-            }
-
-            rtb.Render(dv);
-
-            BitmapEncoder pngEncoder = new PngBitmapEncoder();
-            pngEncoder.Frames.Add(BitmapFrame.Create(rtb));
-
-            try
-            {
-                System.IO.MemoryStream ms = new System.IO.MemoryStream();
-
-                pngEncoder.Save(ms);
-                ms.Close();
-
-                System.IO.File.WriteAllBytes("garden.png", ms.ToArray());
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            */
-        }
-
-        private void RibbonButton_Click_2(object sender, RoutedEventArgs e)
-        {
-            /*
-            try
-            {
-                PrintDialog dialog = new PrintDialog();
-
-                if (dialog.ShowDialog() != true)
-                    return;
-                dialog.PrintVisual(cnvGardenPlan, "IFMS Print Screen");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Print Screen", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            */
-        }
-
+        
+        
         private void RibbonButton_Click_GardenBed(object sender, RoutedEventArgs e)
         {
             isDrawingBeds = true;
@@ -175,6 +51,7 @@ namespace WPFGardenPlanner
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button someButton = sender as Button;
+            Image someImage = sender as Image;
             if (someButton != null)
             {
                 if (isDrawingBeds)
@@ -183,14 +60,27 @@ namespace WPFGardenPlanner
                 }
                 else
                 {
-                    Image imgControl = new Image();
-                    var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
+                    //Image imgControl = new Image();
+                    //var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
 
-                    imgControl.Source = bitmapImage;
-                    someButton.Content = imgControl;
+
+                    //imgControl.Source = bitmapImage;
+                    //someButton.Content = imgControl;
+
+                    someButton.Content = btnClicked.Content;
                 }
             } 
 
+        }
+
+        private void RibbonButton_Plants(object sender, RoutedEventArgs e)
+        {
+            Button someButton = sender as Button;
+            if (someButton != null)
+            {
+                isDrawingBeds = false;
+                //btnClicked.Content = someButton.Content;
+            }
         }
     }
 }
