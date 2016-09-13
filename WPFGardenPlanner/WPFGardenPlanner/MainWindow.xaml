@@ -70,9 +70,9 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BrusselsSprouts.png" Label="Brussels Sprouts" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" Click="RibbonButton_Plants" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" Click="RibbonButton_Plants" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" Click="RibbonButton_Plants" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celeriac.png" Label="Celeriac" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celery.png" Label="Celery" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chard.png" Label="Swiss Chard" />
