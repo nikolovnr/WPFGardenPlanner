@@ -184,7 +184,7 @@ namespace WPFGardenPlanner
                 else
                 {
                     Image imgControl = new Image();
-                    var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
+                    var bitmapImage = new BitmapImage(new Uri(@"pack://application:,,,/Pictures/Plants/Beet.png"));
 
                     imgControl.Source = bitmapImage;
                     someButton.Content = imgControl;
