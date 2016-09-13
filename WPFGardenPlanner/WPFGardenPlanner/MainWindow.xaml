@@ -34,20 +34,16 @@
                 <Custom:RibbonGroup>
 
                     <!-- C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\Pictures-->
-<<<<<<< HEAD
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" />
-                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" />
-=======
+
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
                     <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" Click="RibbonButton_Click_1" />
->>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
 
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/3x3.png" Label="3x3" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/3x3.png" Label="3x3" Click="RibbonButton_Click_GardenBed" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/4x4.png" Label="4x4" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/5x3.png" Label="5x3" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/5x4.png" Label="5x4" />

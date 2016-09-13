@@ -49,41 +49,10 @@ namespace WPFGardenPlanner
             GardenSchema.Children.Add(new WPF.MDI.MdiChild() { Title = "Garden Shema", Background = System.Windows.Media.Brushes.Green, Content =  new Canvas() { Background = Brushes.Green } });
             
         }
-
+        
         private void cnvGardenPlan_MouseDown(object sender, MouseButtonEventArgs e)
         {
             /*
-            // See if we are already drawing a polygon.
-            if (NewPolygon != null)
-            {
-                // We are already drawing a polygon.
-                // If it's the right mouse button, finish this polygon.
-                if (e.RightButton == MouseButtonState.Pressed)
-                {
-                    // Finish this polygon.
-                    if (NewPolygon.Count > 2) Polygons.Add(NewPolygon);
-                    NewPolygon = null;
-                }
-                else
-                {
-                    // Add a point to this polygon.
-                    if (NewPolygon[NewPolygon.Count - 1] != e.GetPosition(cnvGardenPlan))
-                    {
-                        NewPolygon.Add(e.GetPosition(cnvGardenPlan));
-                    }
-                }
-            }
-            else
-            {
-                // Start a new polygon.
-                NewPolygon = new List<Point>();
-                NewPoint = e.GetPosition(cnvGardenPlan);
-                NewPolygon.Add(e.GetPosition(cnvGardenPlan));
-            }
-
-            // Redraw.
-            cnvGardenPlan.InvalidateVisual();
-            */
 
             startPoint = e.GetPosition(cnvGardenPlan);
 
