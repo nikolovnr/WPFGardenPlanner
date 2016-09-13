@@ -9,11 +9,21 @@
         xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:GardenPlanner="clr-namespace:GardenPlanner" x:Class="WPFGardenPlanner.MainWindow"
         mc:Ignorable="d"
         Title="Garden Planner" Height="405.18" Width="720.495" WindowState="Maximized">
+<<<<<<< HEAD
+    <!--<Grid>-->
+    <!--<Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />-->
+    <!--</Grid>-->
+    
+    
+    <DockPanel>
+       
+=======
     <!--<Grid>
 
         <Custom:Ribbon x:Name="ribbon" HorizontalAlignment="Left" VerticalAlignment="Top" />
     </Grid>-->
     <Grid>
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
         <Custom:Ribbon x:Name="rMainMenu" Height="140" VerticalAlignment="Top" >
             <Custom:Ribbon.ApplicationMenu>
                 <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">
@@ -24,8 +34,13 @@
                 <Custom:RibbonGroup>
 
                     <!-- C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\Pictures-->
+<<<<<<< HEAD
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" />
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" />
+=======
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
                     <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" Click="RibbonButton_Click_1" />
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
@@ -125,7 +140,11 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Zucchini.png" Label="Zucchini" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SweetPotato.png" Label="Sweet Potato" />
                 </Custom:RibbonGroup>
+<<<<<<< HEAD
+                <Custom:RibbonGroup AllowDrop="True">
+=======
                 <Custom:RibbonGroup>
+>>>>>>> 0ca6ca6459b1d56fcdec6267b7ba556285a6e666
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Tomato.png" Label="Tomato" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Topinambour.png" Label="Topinambour" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Turnip.png" Label="Turnip" />
