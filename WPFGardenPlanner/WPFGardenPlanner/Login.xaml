@@ -8,8 +8,10 @@
         Title="Login" Height="300" Width="376.011">
     <Grid>
         <Image x:Name="image" HorizontalAlignment="Left" Height="136" Margin="30,67,0,0" VerticalAlignment="Top" Width="101" Source="Pictures/Keys.png"/>
-        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" TextWrapping="Wrap" Text="Email address" TextAlignment="Center"  VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" TextAlignment="Center" LostFocus="textBoxEMail_LostFocus" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="waterMarkedEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" TextAlignment="Center" GotFocus="waterMarkedEMail_GotFocus" VerticalAlignment="Top" Width="150" Foreground="Gray" Text="Email address"/>
         <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="192,125,0,0" VerticalAlignment="Top"   Width="150"  />
+        
         <Button x:Name="buttonLogIn" Content="Log In" HorizontalAlignment="Left" Margin="192,182,0,0" VerticalAlignment="Top" Width="150" Click="buttonLogIn_Click"/>
         <Label x:Name="labelForgot" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top">
             <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
