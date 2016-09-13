@@ -95,8 +95,8 @@ Nathalie:
 3- This time, I need to look about it with Nikolay The Great.
 
 Nikolay:
-1- 
-2- 
-3- 
+1- I looked to rebuild the container to use a grid instead of canvas.
+2- I will make the garden schema to use a grid with images for plants in cells.
+3- I need help to reorganize the database, so to use grid cells.
 
  
