@@ -25,7 +25,8 @@
 
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
                     <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" />
-
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Garden as Image" Click="SaveGardenAsImage" />
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden.png" Label="Print Garden" Click="PrintGarden"/>
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
 
@@ -70,9 +71,9 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BrusselsSprouts.png" Label="Brussels Sprouts" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" Click="RibbonButton_Plants" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" Click="RibbonButton_Plants" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" Click="RibbonButton_Plants" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cabbage.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Carrot.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cauliflower.png" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celeriac.png" Label="Celeriac" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celery.png" Label="Celery" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chard.png" Label="Swiss Chard" />
@@ -402,7 +403,7 @@
                         <Button Grid.Column="7" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="8" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="2" Click="Button_Click"/>
@@ -424,7 +425,7 @@
                         <Button Grid.Column="8" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="9" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="2" Click="Button_Click"/>
@@ -446,7 +447,7 @@
                         <Button Grid.Column="9" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="10" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="2" Click="Button_Click"/>
@@ -468,7 +469,7 @@
                         <Button Grid.Column="10" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="11" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="2" Click="Button_Click"/>
@@ -490,7 +491,7 @@
                         <Button Grid.Column="11" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="12" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="2" Click="Button_Click"/>
@@ -512,7 +513,7 @@
                         <Button Grid.Column="12" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="13" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="2" Click="Button_Click"/>
@@ -534,7 +535,7 @@
                         <Button Grid.Column="13" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="14" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="2" Click="Button_Click"/>
@@ -556,7 +557,7 @@
                         <Button Grid.Column="14" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="15" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="2" Click="Button_Click"/>
@@ -578,7 +579,7 @@
                         <Button Grid.Column="15" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="16" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="2" Click="Button_Click"/>
@@ -600,7 +601,7 @@
                         <Button Grid.Column="16" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="17" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="2" Click="Button_Click"/>
@@ -622,7 +623,7 @@
                         <Button Grid.Column="17" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="18" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="2" Click="Button_Click"/>
@@ -644,7 +645,7 @@
                         <Button Grid.Column="18" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="19" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="2" Click="Button_Click"/>
@@ -666,7 +667,7 @@
                         <Button Grid.Column="19" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="18" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="19" Click="Button_Click"/>
-                        
+
                         <Button Grid.Column="20" Grid.Row="0" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="1" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="2" Click="Button_Click"/>
