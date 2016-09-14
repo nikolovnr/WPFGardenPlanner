@@ -99,4 +99,16 @@ Nikolay:
 2- I will make the garden schema to use a grid with images for plants in cells.
 3- I need help to reorganize the database, so to use grid cells.
 
- 
+
+/////Wednesday: September 14, 2016/////
+Nathalie:
+1- I looked all day to find a solution for changing image on button, found one, but I prefer my partner's solution.
+2- I will finish to implement Nikolay solution with the rest of buttons.
+3- If I need help, I will see with Nikolay the Great.
+
+Nikolay:
+1- Found a solution for seeding plants (put images on grid), save garden as image (hardcoded file garden.png), print garden.
+2- I will work on data model of the garden and Database class.
+3- Nathalie will help me to rebuild the database so to be able to save the garden information from the grid.
+
+  
