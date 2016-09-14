@@ -14,7 +14,7 @@
 
         <Custom:Ribbon x:Name="rMainMenu" Height="140" VerticalAlignment="Top" >
             <Custom:Ribbon.ApplicationMenu>
-                <Custom:RibbonApplicationMenu x:Name="mnuExit" MouseUp="mnuExit_MouseUp">
+                <Custom:RibbonApplicationMenu x:Name="mnuExit">
                     <System:String>Exit</System:String>
                 </Custom:RibbonApplicationMenu>
             </Custom:Ribbon.ApplicationMenu>
@@ -24,7 +24,7 @@
                     <!-- C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner\WPFGardenPlanner\WPFGardenPlanner\Pictures-->
 
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
-                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" Click="RibbonButton_Click_1" />
+                    <Custom:RibbonButton SmallImageSource="pack://application:,,,/Pictures/garden128.png" Label="Open Garden" />
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>

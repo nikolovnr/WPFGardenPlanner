@@ -40,8 +40,6 @@ namespace WPFGardenPlanner
             
         }
         
-        
-        
         private void RibbonButton_Click_GardenBed(object sender, RoutedEventArgs e)
         {
             isDrawingBeds = true;
@@ -60,14 +58,15 @@ namespace WPFGardenPlanner
                 }
                 else
                 {
-                    //Image imgControl = new Image();
-                    //var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
+                    var ss = someButton.Content;
+                    Image imgControl = new Image();
+                    var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
 
 
-                    //imgControl.Source = bitmapImage;
-                    //someButton.Content = imgControl;
+                    imgControl.Source = bitmapImage;
+                    someButton.Content = imgControl;
 
-                    someButton.Content = btnClicked.Content;
+                   
                 }
             } 
 
@@ -79,7 +78,7 @@ namespace WPFGardenPlanner
             if (someButton != null)
             {
                 isDrawingBeds = false;
-                //btnClicked.Content = someButton.Content;
+               
             }
         }
     }
