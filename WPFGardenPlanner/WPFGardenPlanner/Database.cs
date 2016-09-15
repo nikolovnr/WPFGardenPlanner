@@ -7,17 +7,17 @@ using System.Threading.Tasks;
 
 namespace GardenPlanner
 {
-    class Garden
+    public class Garden
     {
 
     }
     
-    class Bed
+    public class Bed
     {
 
     }
 
-    class Plant
+    public class Plant
     {
         public int Id { get; set; }
         public int GardenId { get; set; }
@@ -27,7 +27,8 @@ namespace GardenPlanner
         public int CoordinateY { get; set; }
         public string PicSource { get; set; }
     }
-    class PlantsLookup
+
+    public class PlantsLookup
     {
         public int PlantId { get; set; }
         public string CommonName { get; set; }
@@ -36,7 +37,7 @@ namespace GardenPlanner
         public bool IsParental { get; set; }
         public string PictureSource { get; set; }
     }
-    class Database
+    public class Database
     {
         const string CONN_STRING = @"Data Source=desrosiers.database.windows.net;Initial Catalog=gardenplanner;Integrated Security=False;User ID=sqladmin;Password=16Avril1889;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         
