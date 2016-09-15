@@ -31,33 +31,32 @@
 
             <Custom:RibbonTab x:Name="mnuBed" Header="Garden Bed" KeyTip="B">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/3x3.png" Label="3x3" Click="RibbonButton_Click_GardenBed" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/4x4.png" Label="4x4" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/5x3.png" Label="5x3" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/5x4.png" Label="5x4" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/6x3.png" Label="6x3" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/6x4.png" Label="6x4" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/8x3.png" Label="8x3" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/8x4.png" Label="8x4" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/10x3.png" Label="10x3" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/10x4.png" Label="10x4" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/12x3.png" Label="12x3" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/12x4.png" Label="12x4" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Cornsilk.png" Click="RibbonButton_GardenBed"  Tag="Cornsilk" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Goldenrod.png" Click="RibbonButton_GardenBed"  Tag="Goldenrod" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Wheat.png" Click="RibbonButton_GardenBed"  Tag="Wheat" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/BurlyWood.png" Click="RibbonButton_GardenBed" Tag="BurlyWood" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Tan.png" Click="RibbonButton_GardenBed" Tag="Tan" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkGoldenRod.png" Click="RibbonButton_GardenBed" Tag="DarkGoldenrod" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/SaddleBrown.png" Click="RibbonButton_GardenBed" Tag="SaddleBrown" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Sienna.png" Click="RibbonButton_GardenBed" Tag="Sienna" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot12.png" Label="Pot12" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot16.png" Label="Pot16" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot18.png" Label="Pot18" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot20.png" Label="Pot20" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot24.png" Label="Pot24" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot30.png" Label="Pot30" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Pot36.png" Label="Pot36" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/LimeGreen.png" Click="RibbonButton_GardenBed" Tag="LimeGreen" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Green.png" Click="RibbonButton_GardenBed" Tag="Green" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkGreen.png" Click="RibbonButton_GardenBed" Tag="DarkGreen" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Olive.png" Click="RibbonButton_GardenBed" Tag="Olive" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/OliveDrab.png" Click="RibbonButton_GardenBed" Tag="OliveDrab" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkOliveGreen.png" Click="RibbonButton_GardenBed" Tag="DarkOliveGreen" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkSeaGreen.png" Click="RibbonButton_GardenBed" Tag="DarkSeaGreen" />
+
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-Z" KeyTip="V">
                 <Custom:RibbonGroup>
+
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Artichoke.png" Label="Artichoke" Click="RibbonButton_Plants" Tag="2"/>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Asparagus.png" Label="Asparagus" Click="RibbonButton_Plants" Tag="3"/>
+
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BeanDry.png" Label="Dry Bean" Click="RibbonButton_Plants" Tag="5"/>
@@ -926,7 +925,7 @@
                         <Button Grid.Column="31" Grid.Row="16" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="17" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="18" Click="Button_Click"/>
-                        <Button Grid.Column="31" Grid.Row="19" Click="Button_Click"/>                        
+                        <Button Grid.Column="31" Grid.Row="19" Click="Button_Click"/>
                     </Grid>
                 </Grid>
             </mdi:MdiChild>

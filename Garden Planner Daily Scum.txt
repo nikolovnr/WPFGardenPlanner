@@ -111,4 +111,16 @@ Nikolay:
 2- I will work on data model of the garden and Database class.
 3- Nathalie will help me to rebuild the database so to be able to save the garden information from the grid.
 
+
+/////Thursday: September 15, 2016/////
+Nathalie:
+1- I finished with the beds on grid and worked on login and sign up windows.
+2- I will keep on working on windows, binding them with the database.
+3- I will probably need help with my binding(1) and hyperlink created programmatically(2). I will see 1 with Gregory the Eminent(if he has time) and 2 with Nikolay the Great.
+
+Nikolay:
+1- 
+2- 
+3- 
+
   

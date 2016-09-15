@@ -33,11 +33,14 @@ namespace WPFGardenPlanner
 
         bool isDrawingBeds = false;
 
+        string BedColor;
+        string SeedPlant;
+
         public MainWindow()
         {
             InitializeComponent();
-        }
-        
+            Title = "Garden Planner";
+        }        
         
         private void RibbonButton_Click(object sender, RoutedEventArgs e)
         {
@@ -55,9 +58,15 @@ namespace WPFGardenPlanner
             
         }
         
-        private void RibbonButton_Click_GardenBed(object sender, RoutedEventArgs e)
+        private void RibbonButton_GardenBed(object sender, RoutedEventArgs e)
         {
             isDrawingBeds = true;
+            Button someButton = sender as Button;
+            if (someButton != null)
+            {
+                isDrawingBeds = true;
+                BedColor = (string)someButton.Tag;
+            }
         }
 
         
@@ -66,12 +75,63 @@ namespace WPFGardenPlanner
             Button someButton = sender as Button;
             Image someImage = sender as Image;
             if (someButton != null)
-            {
+            {               
                 if (isDrawingBeds)
                 {
-                    someButton.Background = Brushes.Brown;
+                    switch(BedColor)
+                    {
+                        case "Cornsilk":
+                            someButton.Background = Brushes.Cornsilk;
+                            break;
+                        case "Wheat":
+                            someButton.Background = Brushes.Wheat;
+                            break;
+                        case "BurlyWood":
+                            someButton.Background = Brushes.BurlyWood;
+                            break;
+                        case "Tan":
+                            someButton.Background = Brushes.Tan;
+                            break;
+                        case "Goldenrod":
+                            someButton.Background = Brushes.Goldenrod;
+                            break;
+                        case "DarkGoldenrod":
+                            someButton.Background = Brushes.DarkGoldenrod;
+                            break;
+                        case "SaddleBrown":
+                            someButton.Background = Brushes.SaddleBrown;
+                            break;
+                        case "Sienna":
+                            someButton.Background = Brushes.Sienna;
+                            break;
+                        case "LimeGreen":
+                            someButton.Background = Brushes.LimeGreen;
+                            break;
+                        case "Green":
+                            someButton.Background = Brushes.Green;
+                            break;
+                        case "DarkGreen":
+                            someButton.Background = Brushes.DarkGreen;
+                            break;
+                        case "Olive":
+                            someButton.Background = Brushes.Olive;
+                            break;
+                        case "OliveDrab":
+                            someButton.Background = Brushes.OliveDrab;
+                            break;
+                        case "DarkOliveGreen":
+                            someButton.Background = Brushes.DarkOliveGreen;
+                            break;
+                        case "DarkSeaGreen":
+                            someButton.Background = Brushes.DarkSeaGreen;
+                            break;
+                        default:
+                            break;
+
+                    }                   
                 }
                 else
+
                 {
                     Image imgControl = new Image();
                     var bitmapImage = new BitmapImage(new Uri(pLookup.PictureSource));
@@ -86,8 +146,8 @@ namespace WPFGardenPlanner
 
                     seededPlants[col, row] = pp;
                 }
-            } 
 
+            } 
         }
 
         private void RibbonButton_Plants(object sender, RoutedEventArgs e)
@@ -115,10 +175,8 @@ namespace WPFGardenPlanner
             Rect bounds = VisualTreeHelper.GetDescendantBounds(grdGardenPlan);
             double dpi = 96d;
 
-
             RenderTargetBitmap rtb = new RenderTargetBitmap((int)bounds.Width, (int)bounds.Height, dpi, dpi, System.Windows.Media.PixelFormats.Default);
-
-
+            
             DrawingVisual dv = new DrawingVisual();
             using (DrawingContext dc = dv.RenderOpen())
             {
