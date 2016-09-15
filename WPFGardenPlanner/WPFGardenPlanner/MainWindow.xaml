@@ -232,7 +232,6 @@
                         <Button Grid.Column="0" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="0" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="0" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="0" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="0" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="0" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="0" Grid.Row="11" Click="Button_Click"/>
@@ -253,7 +252,6 @@
                         <Button Grid.Column="1" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="1" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="1" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="1" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="1" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="1" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="1" Grid.Row="10" Click="Button_Click"/>
@@ -276,7 +274,6 @@
                         <Button Grid.Column="2" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="2" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="2" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="2" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="2" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="2" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="2" Grid.Row="11" Click="Button_Click"/>
@@ -297,7 +294,6 @@
                         <Button Grid.Column="3" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="3" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="3" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="3" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="3" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="3" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="3" Grid.Row="10" Click="Button_Click"/>
@@ -320,7 +316,6 @@
                         <Button Grid.Column="4" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="4" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="4" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="4" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="4" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="4" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="4" Grid.Row="11" Click="Button_Click"/>
@@ -341,7 +336,6 @@
                         <Button Grid.Column="5" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="5" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="5" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="5" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="5" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="5" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="5" Grid.Row="10" Click="Button_Click"/>
@@ -364,7 +358,6 @@
                         <Button Grid.Column="6" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="6" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="6" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="6" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="6" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="6" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="6" Grid.Row="11" Click="Button_Click"/>
@@ -385,7 +378,6 @@
                         <Button Grid.Column="7" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="7" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="7" Grid.Row="10" Click="Button_Click"/>
@@ -408,7 +400,6 @@
                         <Button Grid.Column="8" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="8" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="8" Grid.Row="11" Click="Button_Click"/>
@@ -429,7 +420,6 @@
                         <Button Grid.Column="9" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="9" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="9" Grid.Row="10" Click="Button_Click"/>
@@ -452,7 +442,6 @@
                         <Button Grid.Column="10" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="10" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="10" Grid.Row="11" Click="Button_Click"/>
@@ -473,7 +462,6 @@
                         <Button Grid.Column="11" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="11" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="11" Grid.Row="10" Click="Button_Click"/>
@@ -496,7 +484,6 @@
                         <Button Grid.Column="12" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="12" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="12" Grid.Row="11" Click="Button_Click"/>
@@ -517,7 +504,6 @@
                         <Button Grid.Column="13" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="13" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="13" Grid.Row="10" Click="Button_Click"/>
@@ -540,7 +526,6 @@
                         <Button Grid.Column="14" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="14" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="14" Grid.Row="11" Click="Button_Click"/>
@@ -561,7 +546,6 @@
                         <Button Grid.Column="15" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="15" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="15" Grid.Row="10" Click="Button_Click"/>
@@ -584,7 +568,6 @@
                         <Button Grid.Column="16" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="16" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="16" Grid.Row="11" Click="Button_Click"/>
@@ -605,7 +588,6 @@
                         <Button Grid.Column="17" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="17" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="17" Grid.Row="10" Click="Button_Click"/>
@@ -628,7 +610,6 @@
                         <Button Grid.Column="18" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="18" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="18" Grid.Row="11" Click="Button_Click"/>
@@ -649,7 +630,6 @@
                         <Button Grid.Column="19" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="19" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="19" Grid.Row="10" Click="Button_Click"/>
@@ -672,7 +652,6 @@
                         <Button Grid.Column="20" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="20" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="20" Grid.Row="11" Click="Button_Click"/>
@@ -693,7 +672,6 @@
                         <Button Grid.Column="21" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="21" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="21" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="21" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="21" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="21" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="21" Grid.Row="10" Click="Button_Click"/>
@@ -716,7 +694,6 @@
                         <Button Grid.Column="22" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="22" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="22" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="22" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="22" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="22" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="22" Grid.Row="11" Click="Button_Click"/>
@@ -737,7 +714,6 @@
                         <Button Grid.Column="23" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="23" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="23" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="23" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="23" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="23" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="23" Grid.Row="10" Click="Button_Click"/>
@@ -760,7 +736,6 @@
                         <Button Grid.Column="24" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="24" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="24" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="24" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="24" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="24" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="24" Grid.Row="11" Click="Button_Click"/>
@@ -781,7 +756,6 @@
                         <Button Grid.Column="25" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="25" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="25" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="25" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="25" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="25" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="25" Grid.Row="10" Click="Button_Click"/>
@@ -804,7 +778,6 @@
                         <Button Grid.Column="26" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="26" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="26" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="26" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="26" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="26" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="26" Grid.Row="11" Click="Button_Click"/>
@@ -825,7 +798,6 @@
                         <Button Grid.Column="27" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="27" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="27" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="27" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="27" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="27" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="27" Grid.Row="10" Click="Button_Click"/>
@@ -848,7 +820,6 @@
                         <Button Grid.Column="28" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="28" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="28" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="28" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="28" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="28" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="28" Grid.Row="11" Click="Button_Click"/>
@@ -869,7 +840,6 @@
                         <Button Grid.Column="29" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="29" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="29" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="29" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="29" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="29" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="29" Grid.Row="10" Click="Button_Click"/>
@@ -892,7 +862,6 @@
                         <Button Grid.Column="30" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="30" Grid.Row="7" Click="Button_Click"/>
                         <Button Grid.Column="30" Grid.Row="8" Click="Button_Click"/>
-                        <Button Grid.Column="30" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="30" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="30" Grid.Row="10" Click="Button_Click"/>
                         <Button Grid.Column="30" Grid.Row="11" Click="Button_Click"/>
@@ -913,7 +882,6 @@
                         <Button Grid.Column="31" Grid.Row="5" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="6" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="7" Click="Button_Click"/>
-                        <Button Grid.Column="31" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="8" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="9" Click="Button_Click"/>
                         <Button Grid.Column="31" Grid.Row="10" Click="Button_Click"/>
