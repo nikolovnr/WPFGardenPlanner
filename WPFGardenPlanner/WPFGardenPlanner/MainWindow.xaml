@@ -64,101 +64,101 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BeanStringBush.png" Label="Bean Bush" Click="RibbonButton_Plants" Tag="8"/>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BeanStringPole.png" Label="Bean Pole" Click="RibbonButton_Plants" Tag="9"/>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BeanSoy.png" Label="SoyBean" Click="RibbonButton_Plants" Tag="7"/>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Beet.png" Label="Beet" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Beet.png"/>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Broccoli.png" Label="Broccoli" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Broccoli.png"/>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BrusselsSprouts.png" Label="Brussels Sprouts" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/BrusselsSprouts.png"/>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Beet.png" Label="Beet" Click="RibbonButton_Plants" Tag="10"/>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Broccoli.png" Label="Broccoli" Click="RibbonButton_Plants" Tag="11"/>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/BrusselsSprouts.png" Label="Brussels Sprouts" Click="RibbonButton_Plants" Tag="12"/>
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cabbage.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Carrot.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cauliflower.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celeriac.png" Label="Celeriac" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Celeriac.png"/>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celery.png" Label="Celery" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Celery.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chard.png" Label="Swiss Chard" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Chard.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Corn.png" Label="Corn" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Corn.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cucumber.png" Label="Cucumber" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cucumber.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cabbage.png" Label="Cabbage" Click="RibbonButton_Plants" Tag="13" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Carrot.png" Label="Carrot" Click="RibbonButton_Plants" Tag="14" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cauliflower.png" Label="Cauliflower" Click="RibbonButton_Plants" Tag="15" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celeriac.png" Label="Celeriac" Click="RibbonButton_Plants" Tag="16"/>
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Celery.png" Label="Celery" Click="RibbonButton_Plants" Tag="17" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chard.png" Label="Swiss Chard" Click="RibbonButton_Plants" Tag="19" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Corn.png" Label="Corn" Click="RibbonButton_Plants" Tag="22" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cucumber.png" Label="Cucumber" Click="RibbonButton_Plants" Tag="23" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Eggplant.png" Label="Eggplant" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Eggplant.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Eggplant.png" Label="Eggplant" Click="RibbonButton_Plants" Tag="25" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Fennel.png" Label="Fennel" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Fennel.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Fennel.png" Label="Fennel" Click="RibbonButton_Plants" Tag="26" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Garlic.png" Label="Garlic" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Garlic.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Garlic.png" Label="Garlic" Click="RibbonButton_Plants" Tag="27" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Kale.png" Label="Kale" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Kale.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Kohlrabi.png" Label="Kohlrabi" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Kohlrabi.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Kale.png" Label="Kale" Click="RibbonButton_Plants" Tag="28" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Kohlrabi.png" Label="Kohlrabi" Click="RibbonButton_Plants" Tag="29" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Leek.png" Label="Leek" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Leek.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lettuce.png" Label="Lettuce" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Lettuce.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Leek.png" Label="Leek" Click="RibbonButton_Plants" Tag="31" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lettuce.png" Label="Lettuce" Click="RibbonButton_Plants" Tag="32" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuVegetableMZ" Header="Vegetables M-Z" KeyTip="V">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Okra.png" Label="Okra" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Okra.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Onion.png" Label="Onion" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Onion.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Okra.png" Label="Okra" Click="RibbonButton_Plants" Tag="39" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Onion.png" Label="Onion" Click="RibbonButton_Plants" Tag="40" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Parsnip.png" Label="Parsnip" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Parsnip.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Peas.png" Label="Peas" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Peas.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/PeasSnap.png" Label="Peas Snap" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/PeasSnap.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Pepper.png" Label="Sweet Pepper" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Pepper.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/PepperHot.png" Label="Hot Pepper" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/PepperHot.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Potato.png" Label="Potato" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Potato.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Pumpkin.png" Label="Pumpkin" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Pumpkin.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Parsnip.png" Label="Parsnip" Click="RibbonButton_Plants" Tag="42" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Peas.png" Label="Peas" Click="RibbonButton_Plants" Tag="44" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/PeasSnap.png" Label="Peas Snap" Click="RibbonButton_Plants" Tag="45" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Pepper.png" Label="Sweet Pepper" Click="RibbonButton_Plants" Tag="46" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/PepperHot.png" Label="Hot Pepper" Click="RibbonButton_Plants" Tag="47" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Potato.png" Label="Potato" Click="RibbonButton_Plants" Tag="48" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Pumpkin.png" Label="Pumpkin" Click="RibbonButton_Plants" Tag="49" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Radicchio.png" Label="Radicchio" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Radicchio.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Radish.png" Label="Radish" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Radish.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Rhubarb.png" Label="Rhubarb" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Rhubarb.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Radicchio.png" Label="Radicchio" Click="RibbonButton_Plants" Tag="50" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Radish.png" Label="Radish" Click="RibbonButton_Plants" Tag="51" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Rhubarb.png" Label="Rhubarb" Click="RibbonButton_Plants" Tag="53" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Shallot.png" Label="Scallion" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Shallot.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Spinash.png" Label="Spinash" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Spinash.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SummerSquash.png" Label="Summer Squash" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/SummerSquash.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/WinterSquash.png" Label="Winter Squash" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/WinterSquash.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Zucchini.png" Label="Zucchini" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Zucchini.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SweetPotato.png" Label="Sweet Potato" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/SweetPotato.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Shallot.png" Label="Scallion" Click="RibbonButton_Plants" Tag="56" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Spinash.png" Label="Spinash" Click="RibbonButton_Plants" Tag="57" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SummerSquash.png" Label="Summer Squash" Click="RibbonButton_Plants" Tag="58" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/WinterSquash.png" Label="Winter Squash" Click="RibbonButton_Plants" Tag="59" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Zucchini.png" Label="Zucchini" Click="RibbonButton_Plants" Tag="68" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/SweetPotato.png" Label="Sweet Potato" Click="RibbonButton_Plants" Tag="62" />
                 </Custom:RibbonGroup>
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Tomato.png" Label="Tomato" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Tomato.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Topinambour.png" Label="Topinambour" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Topinambour.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Turnip.png" Label="Turnip" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Turnip.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Tomato.png" Label="Tomato" Click="RibbonButton_Plants" Tag="64" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Topinambour.png" Label="Topinambour" Click="RibbonButton_Plants" Tag="65" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Turnip.png" Label="Turnip" Click="RibbonButton_Plants" Tag="66" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuFruit" Header="Fruits" KeyTip="V">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Melon.png" Label="Melon" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Melon.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Raspberry.png" Label="Raspberry" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Raspberry.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Strawberry.png" Label="Strawberry" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Strawberry.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Watermelon.png" Label="Watermelon" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Watermelon.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Melon.png" Label="Melon" Click="RibbonButton_Plants" Tag="35" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Raspberry.png" Label="Raspberry" Click="RibbonButton_Plants" Tag="52" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Strawberry.png" Label="Strawberry" Click="RibbonButton_Plants" Tag="60" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Watermelon.png" Label="Watermelon" Click="RibbonButton_Plants" Tag="67" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuHerb" Header="Herbs" KeyTip="V">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Basil.png" Label="Basil" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Basil.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chives.png" Label="Chives" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Chives.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cilantro.png" Label="Cilantro" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Cilantro.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Dill.png" Label="Dill" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Dill.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Marjoram.png" Label="Marjoram" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Marjoram.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Mint.png" Label="Mint" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Mint.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Oregano.png" Label="Oregano" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Oregano.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Rosemary.png" Label="Rosemary" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Rosemary.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sage.png" Label="Sage" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Sage.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Thyme.png" Label="Thyme" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Thyme.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Basil.png" Label="Basil" Click="RibbonButton_Plants" Tag="4" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chives.png" Label="Chives" Click="RibbonButton_Plants" Tag="20" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Cilantro.png" Label="Cilantro" Click="RibbonButton_Plants" Tag="21" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Dill.png" Label="Dill" Click="RibbonButton_Plants" Tag="24" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Marjoram.png" Label="Marjoram" Click="RibbonButton_Plants" Tag="34" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Mint.png" Label="Mint" Click="RibbonButton_Plants" Tag="36" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Oregano.png" Label="Oregano" Click="RibbonButton_Plants" Tag="41" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Rosemary.png" Label="Rosemary" Click="RibbonButton_Plants" Tag="54" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sage.png" Label="Sage" Click="RibbonButton_Plants" Tag="55" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Thyme.png" Label="Thyme" Click="RibbonButton_Plants" Tag="63" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuFlower" Header="Flowers" KeyTip="V">
                 <Custom:RibbonGroup>
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chamomile.png" Label="Chamomile" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Chamomile.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lavender.png" Label="Lavender" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Lavender.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Marigold.png" Label="Marigold" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Marigold.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/MorningGlory.png" Label="Morning Glory" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/MorningGlory.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Nasturtium.png" Label="Nasturtium" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Nasturtium.png" />
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sunflower.png" Label="Sunflower" Click="RibbonButton_Plants" Tag="pack://application:,,,/Pictures/Plants/Sunflower.png" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chamomile.png" Label="Chamomile" Click="RibbonButton_Plants" Tag="18" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lavender.png" Label="Lavender" Click="RibbonButton_Plants" Tag="30" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Marigold.png" Label="Marigold" Click="RibbonButton_Plants" Tag="33" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/MorningGlory.png" Label="Morning Glory" Click="RibbonButton_Plants" Tag="37" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Nasturtium.png" Label="Nasturtium" Click="RibbonButton_Plants" Tag="38" />
+                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sunflower.png" Label="Sunflower" Click="RibbonButton_Plants" Tag="61" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
         </Custom:Ribbon>
