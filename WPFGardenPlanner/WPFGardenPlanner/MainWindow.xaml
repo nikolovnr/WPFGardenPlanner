@@ -51,7 +51,7 @@
 
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-Z" KeyTip="V">
+            <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-L" KeyTip="L">
                 <Custom:RibbonGroup>
 
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Artichoke.png" Label="Artichoke" Click="RibbonButton_Plants" Tag="2"/>
@@ -96,7 +96,7 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lettuce.png" Label="Lettuce" Click="RibbonButton_Plants" Tag="32" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuVegetableMZ" Header="Vegetables M-Z" KeyTip="V">
+            <Custom:RibbonTab x:Name="mnuVegetableMZ" Header="Vegetables M-Z" KeyTip="M">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Okra.png" Label="Okra" Click="RibbonButton_Plants" Tag="39" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Onion.png" Label="Onion" Click="RibbonButton_Plants" Tag="40" />
@@ -129,7 +129,7 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Turnip.png" Label="Turnip" Click="RibbonButton_Plants" Tag="66" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuFruit" Header="Fruits" KeyTip="V">
+            <Custom:RibbonTab x:Name="mnuFruit" Header="Fruits" KeyTip="F">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Melon.png" Label="Melon" Click="RibbonButton_Plants" Tag="35" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Raspberry.png" Label="Raspberry" Click="RibbonButton_Plants" Tag="52" />
@@ -137,7 +137,7 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Watermelon.png" Label="Watermelon" Click="RibbonButton_Plants" Tag="67" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuHerb" Header="Herbs" KeyTip="V">
+            <Custom:RibbonTab x:Name="mnuHerb" Header="Herbs" KeyTip="H">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Basil.png" Label="Basil" Click="RibbonButton_Plants" Tag="4" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chives.png" Label="Chives" Click="RibbonButton_Plants" Tag="20" />
@@ -151,7 +151,7 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Thyme.png" Label="Thyme" Click="RibbonButton_Plants" Tag="63" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
-            <Custom:RibbonTab x:Name="mnuFlower" Header="Flowers" KeyTip="V">
+            <Custom:RibbonTab x:Name="mnuFlower" Header="Flowers" KeyTip="D">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Chamomile.png" Label="Chamomile" Click="RibbonButton_Plants" Tag="18" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Lavender.png" Label="Lavender" Click="RibbonButton_Plants" Tag="30" />
@@ -161,6 +161,11 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Plants/Sunflower.png" Label="Sunflower" Click="RibbonButton_Plants" Tag="61" />
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
+            <Custom:RibbonTab x:Name="mnuCompanions" Header="Companions" KeyTip="C">
+                <Custom:RibbonGroup>
+                </Custom:RibbonGroup>
+            </Custom:RibbonTab>
+
         </Custom:Ribbon>
 
         <mdi:MdiContainer x:Name="GardenSchema" Theme="Aero" Margin="0,132,0,-279">
