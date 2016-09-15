@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GardenPlanner;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Packaging;
@@ -25,8 +26,12 @@ namespace WPFGardenPlanner
     /// 
     public partial class MainWindow : Window
     {
+        Database db = new Database();
+
+        Plant[,] seededPlants = new Plant[32,20];
+        PlantsLookup pLookup = new PlantsLookup();
+
         bool isDrawingBeds = false;
-        string SeedPlant;
 
         public MainWindow()
         {
@@ -36,7 +41,17 @@ namespace WPFGardenPlanner
         
         private void RibbonButton_Click(object sender, RoutedEventArgs e)
         {
-            GardenSchema.Children.Add(new WPF.MDI.MdiChild() { Title = "Garden Shema", Background = System.Windows.Media.Brushes.Green, Content =  new Canvas() { Background = Brushes.Green } });
+            //GardenSchema.Children.Add(new WPF.MDI.MdiChild() { Title = "Garden Shema", Background = System.Windows.Media.Brushes.Green, Content =  new Canvas() { Background = Brushes.Green } });
+
+            for (int col = 0; col < 32; col++)
+            {
+                for (int row = 0; row < 20; row++)
+                {
+                    seededPlants[col, row] = null;
+                    var btn = grdGardenPlan.Children.Cast<Button>().First(eg => Grid.GetRow(eg) == row && Grid.GetColumn(eg) == col);
+                    btn.Content = null;
+                }
+            }
             
         }
         
@@ -58,21 +73,18 @@ namespace WPFGardenPlanner
                 }
                 else
                 {
-                    //var ss = someButton.Content;
                     Image imgControl = new Image();
-                    //var bitmapImage = new BitmapImage(new Uri(@"C:\Users\Nikolay Nikolov\Documents\WPFGardenPlanner2\WPFGardenPlanner\WPFGardenPlanner\Pictures\Plants\Beet.png"));
-
-
-                    //imgControl.Source = bitmapImage;
-
-
-                    var bitmapImage = new BitmapImage(new Uri(SeedPlant));
-
+                    var bitmapImage = new BitmapImage(new Uri(pLookup.PictureSource));
                     imgControl.Source = bitmapImage;
-
                     someButton.Content = imgControl;
 
-                   
+                    int col = Grid.GetColumn(someButton);
+                    int row = Grid.GetRow(someButton);
+                    
+                    //TODO: Take the correct GardenID
+                    Plant pp = new Plant() { GardenId = 4, PlantId = pLookup.PlantId, CoordinateX = col, CoordinateY = row};
+
+                    seededPlants[col, row] = pp;
                 }
             } 
 
@@ -84,7 +96,17 @@ namespace WPFGardenPlanner
             if (someButton != null)
             {
                 isDrawingBeds = false;
-                SeedPlant = (string)someButton.Tag;
+                //SeedPlant = (string)someButton.Tag;
+
+                int tag;
+                bool res = int.TryParse((string)someButton.Tag, out tag);
+                if (res == false)
+                {
+                    MessageBox.Show("Unable to fetch the plant from database", "Database error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+                    return;
+                }
+                
+                pLookup = db.GetPlantById(tag);
             }
         }
 
@@ -137,6 +159,45 @@ namespace WPFGardenPlanner
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Print Screen", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void RibbonButton_SaveGarden(object sender, RoutedEventArgs e)
+        {
+            for (int col = 0; col < 32; col++)
+            {
+                for(int row = 0; row < 20; row++)
+                {
+                    if (seededPlants[col, row] != null)
+                    {
+                        db.AddPlant(seededPlants[col, row]);
+                    }
+                }
+            }
+            MessageBox.Show("Garden is saved into database", "Save Garden", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void RibbonButton_OpenGarden(object sender, RoutedEventArgs e)
+        {
+            for (int col = 0; col < 32; col++)
+            {
+                for (int row = 0; row < 20; row++)
+                {
+                    seededPlants[col, row] = null;
+                }
+            }
+            List<Plant> plantsDB = new List<Plant>();
+            
+            //TODO: Take the correct GardenID
+            plantsDB = db.GetAllPlants(4);
+            foreach(Plant p in plantsDB)
+            {
+                Image imgControl = new Image();
+                var bitmapImage = new BitmapImage(new Uri(p.PicSource));
+                imgControl.Source = bitmapImage;
+                var btn = grdGardenPlan.Children.Cast<Button>().First(eg => Grid.GetRow(eg) == p.CoordinateY && Grid.GetColumn(eg) == p.CoordinateX);
+                btn.Content = imgControl;
+                seededPlants[p.CoordinateX, p.CoordinateY] = p;
             }
         }
     }
