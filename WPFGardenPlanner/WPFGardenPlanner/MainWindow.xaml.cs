@@ -25,12 +25,12 @@ namespace WPFGardenPlanner
         Database db = new Database();
 
         Plant[,] seededPlants = new Plant[32,20];
+        Bed[,] buildBeds = new Bed[32, 20];
         PlantsLookup pLookup = new PlantsLookup();
 
         bool isDrawingBeds = false;
 
         string BedColor;
-        string SeedPlant;
         string Companions;
 
         public MainWindow()
@@ -127,18 +127,21 @@ namespace WPFGardenPlanner
                 }
                 else
                 {
-                    Image imgControl = new Image();
-                    var bitmapImage = new BitmapImage(new Uri(pLookup.PictureSource));
-                    imgControl.Source = bitmapImage;
-                    someButton.Content = imgControl;
+                    if (pLookup.PictureSource != null)
+                    {
+                        Image imgControl = new Image();
+                        var bitmapImage = new BitmapImage(new Uri(pLookup.PictureSource));
+                        imgControl.Source = bitmapImage;
+                        someButton.Content = imgControl;
 
-                    int col = Grid.GetColumn(someButton);
-                    int row = Grid.GetRow(someButton);
-                    
-                    //TODO: Take the correct GardenID
-                    Plant pp = new Plant() { GardenId = 4, PlantId = pLookup.PlantId, CoordinateX = col, CoordinateY = row};
+                        int col = Grid.GetColumn(someButton);
+                        int row = Grid.GetRow(someButton);
 
-                    seededPlants[col, row] = pp;
+                        //TODO: Take the correct GardenID
+                        Plant pp = new Plant() { GardenId = 4, PlantId = pLookup.PlantId, CoordinateX = col, CoordinateY = row };
+
+                        seededPlants[col, row] = pp;
+                    }
                 }
             } 
         }

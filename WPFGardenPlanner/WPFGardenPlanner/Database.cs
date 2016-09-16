@@ -14,7 +14,12 @@ namespace GardenPlanner
     
     public class Bed
     {
-
+        public int Id { get; set; }
+        public int GardenId { get; set; }
+        public string Name { get; set; }
+        public int CoordinateX { get; set; }
+        public int CoordinateY { get; set; }
+        public string PicSource { get; set; }
     }
 
     public class Plant
@@ -54,6 +59,16 @@ namespace GardenPlanner
         public void AddBed(Bed b)
         {
             throw new NotImplementedException();
+            /*
+            SqlCommand cmd = new SqlCommand("INSERT INTO Bed (GardenId, BedId, BedName, CoordinateX, CoordinateY) VALUES (@BadId, @PlantId, @CoordinateX, @CoordinateY)");
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@BadId", p.GardenId);
+            cmd.Parameters.AddWithValue("@PlantId", p.PlantId);
+            cmd.Parameters.AddWithValue("@CoordinateX", p.CoordinateX);
+            cmd.Parameters.AddWithValue("@CoordinateY", p.CoordinateY);
+            cmd.ExecuteNonQuery();
+            */
         }
 
         public List<Bed> GetAllBeds()
