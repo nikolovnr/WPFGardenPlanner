@@ -48,7 +48,6 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/OliveDrab.png" Click="RibbonButton_GardenBed" Tag="OliveDrab" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkOliveGreen.png" Click="RibbonButton_GardenBed" Tag="DarkOliveGreen" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkSeaGreen.png" Click="RibbonButton_GardenBed" Tag="DarkSeaGreen" />
-
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-L" KeyTip="L">

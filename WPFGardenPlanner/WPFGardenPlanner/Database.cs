@@ -7,14 +7,32 @@ using System.Threading.Tasks;
 
 namespace GardenPlanner
 {
+    public class Customer
+    {
+        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+
     public class Garden
     {
-
+        public int GardenId { get; set; }
+        public string Name { get; set; }
+        //public double Size { get; set; }
+        public int PlantHardinessZone { get; set; }
+        public DateTime LastSpringFrostDate { get; set; }
+        public DateTime FirstFallFrostDate { get; set; }
+        public int FrostFreeGrowingSeason { get; set; }
     }
-    
+
     public class Bed
     {
-
+        public int BedId { get; set; }
+        public string BedName { get; set; }
+        public int Garden_Id { get; set; }
+        public string Shape { get; set; }
+        //public numeric? Size { get; set; }
     }
 
     public class Plant
@@ -40,7 +58,6 @@ namespace GardenPlanner
     public class Database
     {
         const string CONN_STRING = @"Data Source=desrosiers.database.windows.net;Initial Catalog=gardenplanner;Integrated Security=False;User ID=sqladmin;Password=16Avril1889;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        
         private SqlConnection conn;
 
         public Database()
@@ -48,6 +65,52 @@ namespace GardenPlanner
             conn = new SqlConnection(CONN_STRING);
             conn.Open();
         }
+
+        public void AddCustomer(Customer c)
+        {
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO Customer(UserName, Email, Password) VALUES (@UserName, @Email, @Password)"))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conn;
+                cmd.Parameters.AddWithValue("@UserName", c.UserName);
+                cmd.Parameters.AddWithValue("@Email", c.Email);
+                cmd.Parameters.AddWithValue("@Password", c.Password);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        /*public int GardenId { get; set; }
+        public string Name { get; set; }
+        //public double Size { get; set; }
+        public int PlantHardinessZone { get; set; }
+        public DateTime LastSpringFrostDate { get; set; }
+        public DateTime FirstFallFrostDate { get; set; }
+        public int FrostFreeGrowingSeason { get; set; }*/
+
+        public void AddGarden(Garden g)
+        {
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO Garden(Name, Size, PlantHardinessZone, LastSpringFrostDate, FirstFallFrostDate, FrostFreeGrowingSeason) VALUES (@Name, @Size, @PlantHardinessZone, @LastSpringFrostDate, @FirstFallFrostDate, @FrostFreeGrowingSeason)"))
+            { 
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conn;
+                cmd.Parameters.AddWithValue("@UserName", g.Name);
+                cmd.Parameters.AddWithValue("@Email", g.PlantHardinessZone);
+                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,7 +191,7 @@ namespace GardenPlanner
 
         public PlantsLookup GetPlantById(int Id)
         {
-           
+
             SqlCommand cmd = new SqlCommand("SELECT * FROM Plant WHERE PlantId = @Id", conn);
             cmd.Parameters.AddWithValue("@Id", Id);
             PlantsLookup p = new PlantsLookup();
@@ -160,8 +223,5 @@ namespace GardenPlanner
             }
             return p;
         }
-            
-            
     }
-
 }
