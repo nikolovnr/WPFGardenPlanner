@@ -48,6 +48,7 @@ namespace WPFGardenPlanner
                 for (int row = 0; row < 20; row++)
                 {
                     seededPlants[col, row] = null;
+                    buildBeds[col, row] = null;
                     var btn = grdGardenPlan.Children.Cast<Button>().First(eg => Grid.GetRow(eg) == row && Grid.GetColumn(eg) == col);
                     btn.Content = null;
                 }
@@ -66,6 +67,61 @@ namespace WPFGardenPlanner
         }
 
         
+        private SolidColorBrush getBkgColor(string color)
+        {
+            SolidColorBrush br = Brushes.White;
+            switch (color)
+            {
+                case "Cornsilk":
+                    br = Brushes.Cornsilk;
+                    break;
+                case "Wheat":
+                    br = Brushes.Wheat;
+                    break;
+                case "BurlyWood":
+                    br = Brushes.BurlyWood;
+                    break;
+                case "Tan":
+                    br = Brushes.Tan;
+                    break;
+                case "Goldenrod":
+                    br = Brushes.Goldenrod;
+                    break;
+                case "DarkGoldenrod":
+                    br = Brushes.DarkGoldenrod;
+                    break;
+                case "SaddleBrown":
+                    br = Brushes.SaddleBrown;
+                    break;
+                case "Sienna":
+                    br = Brushes.Sienna;
+                    break;
+                case "LimeGreen":
+                    br = Brushes.LimeGreen;
+                    break;
+                case "Green":
+                    br = Brushes.Green;
+                    break;
+                case "DarkGreen":
+                    br = Brushes.DarkGreen;
+                    break;
+                case "Olive":
+                    br = Brushes.Olive;
+                    break;
+                case "OliveDrab":
+                    br = Brushes.OliveDrab;
+                    break;
+                case "DarkOliveGreen":
+                    br = Brushes.DarkOliveGreen;
+                    break;
+                case "DarkSeaGreen":
+                    br = Brushes.DarkSeaGreen;
+                    break;
+                default:
+                    break;
+            }
+            return br;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button someButton = sender as Button;
@@ -139,8 +195,10 @@ namespace WPFGardenPlanner
 
                         //TODO: Take the correct GardenID
                         Plant pp = new Plant() { GardenId = 4, PlantId = pLookup.PlantId, CoordinateX = col, CoordinateY = row };
+                        Bed bb = new Bed() { GardenId = 4, CoordinateX = col, CoordinateY = row, PicSource = BedColor };
 
                         seededPlants[col, row] = pp;
+                        buildBeds[col, row] = bb;
                     }
                 }
             } 
@@ -339,6 +397,8 @@ namespace WPFGardenPlanner
 
         private void RibbonButton_SaveGarden(object sender, RoutedEventArgs e)
         {
+            db.DeleteAllBedsFromGarden(4);
+            db.DeleteAllPlantsFromGarden(4);
             for (int col = 0; col < 32; col++)
             {
                 for(int row = 0; row < 20; row++)
@@ -346,6 +406,7 @@ namespace WPFGardenPlanner
                     if (seededPlants[col, row] != null)
                     {
                         db.AddPlant(seededPlants[col, row]);
+                        db.AddBed(buildBeds[col, row]);
                     }
                 }
             }
@@ -359,6 +420,7 @@ namespace WPFGardenPlanner
                 for (int row = 0; row < 20; row++)
                 {
                     seededPlants[col, row] = null;
+                    buildBeds[col, row] = null;
                 }
             }
             List<Plant> plantsDB = new List<Plant>();
@@ -373,6 +435,23 @@ namespace WPFGardenPlanner
                 var btn = grdGardenPlan.Children.Cast<Button>().First(eg => Grid.GetRow(eg) == p.CoordinateY && Grid.GetColumn(eg) == p.CoordinateX);
                 btn.Content = imgControl;
                 seededPlants[p.CoordinateX, p.CoordinateY] = p;
+            }
+
+            List<Bed> bedsDB = new List<Bed>();
+            bedsDB = db.GetBedByGardenId(4);
+            foreach (Bed b in bedsDB)
+            {
+                //Image imgControl = new Image();
+                //var bitmapImage = new BitmapImage(new Uri(p.PicSource));
+                //imgControl.Source = bitmapImage;
+                var btn = grdGardenPlan.Children.Cast<Button>().First(eg => Grid.GetRow(eg) == b.CoordinateY && Grid.GetColumn(eg) == b.CoordinateX);
+                //btn.Content = imgControl;
+                buildBeds[b.CoordinateX, b.CoordinateY] = b;
+                if (getBkgColor(b.PicSource) != Brushes.White)
+                {
+                    btn.Background = getBkgColor(b.PicSource);
+                }
+                
             }
         }
     }

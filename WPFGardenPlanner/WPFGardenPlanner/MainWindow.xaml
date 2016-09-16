@@ -11,11 +11,7 @@
         Title="Garden Planner" Height="405.18" Width="720.495" WindowState="Maximized">
     <Grid>
         <Custom:Ribbon x:Name="rMainMenu" Height="140" VerticalAlignment="Top" >
-            <Custom:Ribbon.ApplicationMenu>
-                <Custom:RibbonApplicationMenu x:Name="mnuExit">
-                    <System:String>Exit</System:String>
-                </Custom:RibbonApplicationMenu>
-            </Custom:Ribbon.ApplicationMenu>
+            
             <Custom:RibbonTab x:Name="mnuGarden" Header="Garden" KeyTip="G">
                 <Custom:RibbonGroup>
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/garden32.png" Label="New Garden" Click="RibbonButton_Click" />
@@ -47,12 +43,8 @@
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/Olive.png" Click="RibbonButton_GardenBed" Tag="Olive" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/OliveDrab.png" Click="RibbonButton_GardenBed" Tag="OliveDrab" />
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkOliveGreen.png" Click="RibbonButton_GardenBed" Tag="DarkOliveGreen" />
-<<<<<<< HEAD
                     <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkSeaGreen.png" Click="RibbonButton_GardenBed" Tag="DarkSeaGreen" />
-=======
-                    <Custom:RibbonButton LargeImageSource="pack://application:,,,/Pictures/Beds/DarkSeaGreen.png"
-                                         Click="RibbonButton_GardenBed" Tag="DarkSeaGreen" />
->>>>>>> 8656dac381949437f720e7e599ae257cf90afe39
+
                 </Custom:RibbonGroup>
             </Custom:RibbonTab>
             <Custom:RibbonTab x:Name="mnuVegetableAL" Header="Vegetables A-L" KeyTip="L">

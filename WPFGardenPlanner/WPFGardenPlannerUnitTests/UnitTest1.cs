@@ -1,6 +1,7 @@
 ﻿using System;
 using GardenPlanner;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 
 namespace WPFGardenPlannerUnitTests
 {
@@ -11,7 +12,7 @@ namespace WPFGardenPlannerUnitTests
         public void GettLinkToImage()
         {
             int plantId = 2;
-            string expected = "ddd";
+            string expected = "pack://application:,,,/Pictures/Plants/Artichoke.png";
             Database db = new Database();
             PlantsLookup p = new PlantsLookup();
             p = db.GetPlantById(plantId);
@@ -20,9 +21,21 @@ namespace WPFGardenPlannerUnitTests
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void GetGardenBeds()
         {
-            
+            Database db = new Database();
+            List<Bed> b = new List<Bed>();
+            b = db.GetBedByGardenId(4);
+            Assert.AreNotEqual(b, null);
+        }
+
+        [TestMethod]
+        public void GetGardenPlant()
+        {
+            Database db = new Database();
+            PlantsLookup b = new PlantsLookup();
+            b = db.GetPlantById(2);
+            Assert.AreNotEqual(b, null);
         }
     }
 }
