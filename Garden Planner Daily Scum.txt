@@ -123,4 +123,16 @@ Nikolay:
 2- I will work on testing components in project, saving garden and beds.
 3- I need help to refactor the code so to be able to save all kind of plants in database.
 
+
+/////Friday: September 16, 2016/////
+Nathalie:
+1- I kept on working on LogIn and SignUp windows, completed the companion plants stuff and worked on the presentation.
+2- I will keep on working on windows, binding them with the database. I have testing to do too and listen to people presentations.
+3- I will definitely need help for putting everything together. I can see this with Nikolay the Great or Gregory the Eminent.
+
+Nikolay:
+1- 
+2- 
+3- 
+
   
