@@ -193,7 +193,7 @@ namespace WPFGardenPlanner
                         MessageBox.Show("Asparagus, Beet, Bush Bean, Carrot, Celery, Chive, Cucumber, Dill, Garlic, Kale, Leek, Lettuce, Mint, Nasturtium, Onion, Potato, Rosemary, Sage, Scallion, Spinach, Thyme and Tomato.", "Cabbage companion plants");
                         break;
                     case "Carrot":
-                        MessageBox.Show("Bean, Brussels Sprouts, Cabbage, Chive, leaf Lettuce, Leek, Onion, Pea, Pepper, red Radish, Rosemary, Sage and Tomato.", "Carrot companion plants");
+                        MessageBox.Show("Bean, Brussels Sprouts, Cabbage, Chive, leaf Lettuce, Leek, Onion, Pea, Pepper, red Radish, Rosemary and Sage.", "Carrot companion plants");
                         break;
                     case "Cauliflower":
                         MessageBox.Show("Asparagus, Beet, Bush Bean, Carrot, Celery, Chive, Cucumber, Dill, Garlic, Kale, Leek, Lettuce, Mint, Nasturtium, Onion, Potato, Rosemary, Sage, Scallion, Spinach and Tomato.", "Cauliflower companion plants");
@@ -274,7 +274,7 @@ namespace WPFGardenPlanner
                         MessageBox.Show("Bean, Borage, Lettuce, Onion, Pea and Spinach.", "Strawberry companion plants");
                         break;
                     case "Tomato":
-                        MessageBox.Show("Asparagus, Basil, Bee Balm, Bush Bean, Broccoli, Brussels Sprouts, Cabbage, Carrot, Cauliflower, Celery, Chive, Cress, Cucumber, Garlic, Horseradish, Kale, Kohlrabi, head Lettuce, Marigold, Mint, Mizuna, Mustard, Nasturtium, Onion, Pak Choi, Parsley, Pepper, Radish, Rutabaga and Turnip.", "Tomato companion plants");
+                        MessageBox.Show("Asparagus, Basil, Bee Balm, Bush Bean, Broccoli, Brussels Sprouts, Cabbage, Cauliflower, Celery, Chive, Cress, Cucumber, Garlic, Horseradish, Kale, Kohlrabi, head Lettuce, Marigold, Mint, Mizuna, Mustard, Nasturtium, Onion, Pak Choi, Parsley, Pepper, Radish, Rutabaga and Turnip.", "Tomato companion plants");
                         break;
                     case "Turnip":
                         MessageBox.Show("Asparagus, Chive, Garlic, Leek, Onion, Scallion and Pea.", "Turnip companion plants");
