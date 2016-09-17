@@ -1,0 +1,81 @@
+﻿<Window x:Class="GardenPlanner.SignIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GardenPlanner"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="SignIn" Height="550.667" Width="911.334">
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="528" VerticalAlignment="Top" Width="905" Source="Pictures/Signin.jpg" Margin="0,0,-0.333,-2.667"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="225,75,0,0" VerticalAlignment="Top" Width="175" LostFocus="textBoxName_LostFocus"/>
+        <TextBox x:Name="watermarkName" HorizontalAlignment="Left" Height="23" Margin="225,75,0,0" Foreground="Silver" Text="Your full name" VerticalAlignment="Top" Width="175" GotFocus="watermarkName_GotFocus"  />
+        <TextBox x:Name="textBoxEmail" HorizontalAlignment="Left" Height="23" Margin="225,125,0,0" VerticalAlignment="Top" Width="175" LostFocus="textBoxEmail_LostFocus"/>
+        <TextBox x:Name="watermarkEmail" HorizontalAlignment="Left" Height="23" Margin="225,125,0,0" Foreground="Silver" Text="Email" VerticalAlignment="Top" Width="175" GotFocus="watermarkEmail_GotFocus"  />
+        <PasswordBox x:Name="passwordBox1" HorizontalAlignment="Left" Margin="225,175,0,0" VerticalAlignment="Top" Width="175" LostFocus="passwordBox_LostFocus" />
+        <TextBox x:Name="watermarkPassword1" HorizontalAlignment="Left" Height="23" Margin="225,175,0,0" Foreground="Silver" Text="Password" VerticalAlignment="Top" Width="175" GotFocus="watermarkPassword_GotFocus"/>
+        <PasswordBox x:Name="passwordBox2" HorizontalAlignment="Left" Margin="225,225,0,0" VerticalAlignment="Top" Width="175" LostFocus="passwordBox2_LostFocus" />
+        <TextBox x:Name="watermarkPassword2" HorizontalAlignment="Left" Height="23" Margin="225,225,0,0" Foreground="Silver" Text="Retype your password" VerticalAlignment="Top" Width="175" GotFocus="watermarkPassword2_GotFocus"  />
+        <ComboBox x:Name="comboBoxGardenCountry" HorizontalAlignment="Left" Margin="225,275,0,0" VerticalAlignment="Top" Width="175">
+            <ComboBoxItem IsSelected="True">Select your country</ComboBoxItem>
+            <ComboBoxItem>Canada</ComboBoxItem>
+            <ComboBoxItem>United States</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="labelSignUp" FontSize="24" Content="Sign up" HorizontalAlignment="Left" Margin="48,25,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelAboutYou" FontSize="16" Content="About you" HorizontalAlignment="Left" Margin="225,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.485,-1.747"/>
+        <Label x:Name="labelAboutYourGarden" FontSize="16" Content="About your garden" HorizontalAlignment="Left" Margin="450,25,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.485,-1.747"/>
+        <Label x:Name="labelPlantHardinessZone" Content="Plant hardiness zone" HorizontalAlignment="Left" Margin="450,75,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelLastSpringFrostDate" Content="Last spring frost date" HorizontalAlignment="Left" Margin="450,125,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelFirstFallSpringDate" Content="First fall frost date" HorizontalAlignment="Left" Margin="450,175,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxPlantHardinessZone" HorizontalAlignment="Left" Margin="575,75,0,0" VerticalAlignment="Top" Width="175">
+            <ComboBoxItem IsSelected="True">Select your hardiness zone</ComboBoxItem>
+            <sys:Int32>1</sys:Int32>
+            <sys:Int32>2</sys:Int32>
+            <sys:Int32>3</sys:Int32>
+            <sys:Int32>4</sys:Int32>
+            <sys:Int32>5</sys:Int32>
+            <sys:Int32>6</sys:Int32>
+            <sys:Int32>7</sys:Int32>
+            <sys:Int32>8</sys:Int32>
+            <sys:Int32>9</sys:Int32>
+            <sys:Int32>10</sys:Int32>
+            <sys:Int32>11</sys:Int32>
+        </ComboBox>
+        <DatePicker x:Name="datepickerLastSpringFrostDate" HorizontalAlignment="Left" Margin="575,127,0,0" VerticalAlignment="Top" DisplayDate="2016-09-14"/>
+        <DatePicker x:Name="datepickerFirstFallFrostDate" HorizontalAlignment="Left" Margin="575,175,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelHowToFindPlantHardinessZone" HorizontalAlignment="Left" Margin="450,225,0,0" VerticalAlignment="Top">
+            <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigatePlantHardiness">
+                How to find my plant hardiness zone?
+            </Hyperlink>
+        </Label>
+        <Label x:Name="labelHowToFindFrostDates" HorizontalAlignment="Left" Margin="450,275,0,0" VerticalAlignment="Top">
+            <Hyperlink NavigateUri="http://www.almanac.com/gardening/frostdates/postalcode" RequestNavigate="Hyperlink_RequestNavigateFrostDates">
+                How to find my frost dates?
+            </Hyperlink>
+        </Label>
+        <Button x:Name="buttonSignUp"  Content="Sign Up" FontSize="18" Width="100" Height="100" Click="buttonSignUp_Click" Margin="543,369,261.667,56.333">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Stroke="Black" StrokeThickness="2">
+                            <Ellipse.Fill>
+                                <RadialGradientBrush>
+                                    <GradientStop Offset="0" Color="Yellow" />
+                                    <GradientStop Offset="1" Color="Gold" />
+                                    <GradientStop Offset="1" Color="Gold" />
+                                    <RadialGradientBrush.Transform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="0.65" />
+                                        </TransformGroup>
+                                    </RadialGradientBrush.Transform>
+                                </RadialGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
