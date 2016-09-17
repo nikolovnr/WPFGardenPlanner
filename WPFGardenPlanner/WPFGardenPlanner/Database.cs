@@ -28,10 +28,11 @@ namespace GardenPlanner
     public class Bed
     {
         public int BedId { get; set; }
-        public string BedName { get; set; }
-        public int Garden_Id { get; set; }
-        public string Shape { get; set; }
-        //public numeric? Size { get; set; }
+        public int GardenId { get; set; }
+        public string Name { get; set; }
+        public int CoordinateX { get; set; }
+        public int CoordinateY { get; set; }
+        public string PicSource { get; set; }
     }
 
     public class Plant
