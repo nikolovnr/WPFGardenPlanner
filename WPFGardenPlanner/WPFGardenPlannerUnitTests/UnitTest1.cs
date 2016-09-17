@@ -37,5 +37,15 @@ namespace WPFGardenPlannerUnitTests
             b = db.GetPlantById(2);
             Assert.AreNotEqual(b, null);
         }
+
+        //Tested by Nathalie the Good
+        [TestMethod]
+        public void GetGardenCustomer()
+        {
+            Database db = new Database();
+            Customer c = new Customer();
+            c = db.GetPlantById(2);
+            Assert.AreNotEqual(c, null);
+        }
     }
 }

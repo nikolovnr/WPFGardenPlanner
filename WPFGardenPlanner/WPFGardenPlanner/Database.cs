@@ -78,7 +78,39 @@ namespace GardenPlanner
                 cmd.ExecuteNonQuery();
             }
         }
-        
+
+        public Customer GetCustomerById(int Id)
+        {
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Customer WHERE UserId = @UserId", conn);
+            cmd.Parameters.AddWithValue("@UserId", Id);
+            Customer c = new Customer();
+            try
+            {
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {                          
+                            string userName = reader.GetString(reader.GetOrdinal("UserName"));
+                            string email = reader.GetString(reader.GetOrdinal("Email"));
+                            string password = reader.GetString(reader.GetOrdinal("Password"));
+                            c.UserId = Id;
+                            c.UserName = userName;
+                            c.Email = email;
+                            c.Password = password;                           
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            return c;
+        }
+
         public void AddGarden(Garden g)
         {
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Garden(Name, Size, PlantHardinessZone, LastSpringFrostDate, FirstFallFrostDate, FrostFreeGrowingSeason) VALUES (@Name, @Size, @PlantHardinessZone, @LastSpringFrostDate, @FirstFallFrostDate, @FrostFreeGrowingSeason)"))

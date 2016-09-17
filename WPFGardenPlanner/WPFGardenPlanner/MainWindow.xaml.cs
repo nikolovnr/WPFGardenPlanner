@@ -182,7 +182,7 @@ namespace WPFGardenPlanner
                     }
                     int col = Grid.GetColumn(someButton);
                     int row = Grid.GetRow(someButton);
-                    Bed bb = new Bed() { Garden_Id = 4, CoordinateX = col, CoordinateY = row, PicSource = BedColor };
+                    Bed bb = new Bed() { GardenId = 4, CoordinateX = col, CoordinateY = row, PicSource = BedColor };
 
                     buildBeds[col, row] = bb;
                 }
