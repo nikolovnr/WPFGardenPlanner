@@ -44,7 +44,7 @@ namespace WPFGardenPlannerUnitTests
         {
             Database db = new Database();
             Customer c = new Customer();
-            c = db.GetPlantById(2);
+            c = db.GetCustomerById(4);
             Assert.AreNotEqual(c, null);
         }
     }
