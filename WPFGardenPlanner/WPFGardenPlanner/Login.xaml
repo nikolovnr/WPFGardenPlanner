@@ -8,22 +8,23 @@
         Title="Login" Height="300" Width="376.011">
     <Grid>
         <Image x:Name="image" HorizontalAlignment="Left" Height="136" Margin="30,67,0,0" VerticalAlignment="Top" Width="101" Source="Pictures/Keys.png"/>
-        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" TextWrapping="Wrap" Text="Email address" TextAlignment="Center"  VerticalAlignment="Top" Width="150"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="192,125,0,0" VerticalAlignment="Top"   Width="150"  />
-        <Button x:Name="buttonLogIn" Content="Log In" HorizontalAlignment="Left" Margin="192,182,0,0" VerticalAlignment="Top" Width="150" Click="buttonLogIn_Click"/>
+        <TextBox x:Name="textBoxEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" LostFocus="textBoxEMail_LostFocus" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="waterMarkedEMail" HorizontalAlignment="Left" Height="23" Margin="189,67,0,0" GotFocus="waterMarkedEMail_GotFocus" VerticalAlignment="Top" Width="175" Foreground="Silver" Text="Email address"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="23" Margin="192,125,0,0" VerticalAlignment="Top"   Width="175"  />
+        <TextBox x:Name="waterMarkedPassword" HorizontalAlignment="Left" Height="23" Margin="192,125,0,0" GotFocus="waterMarkedPassword_GotFocus" VerticalAlignment="Top" Width="175" Foreground="Silver" Text="Password"/>
+        <Button x:Name="buttonLogIn" Content="Log In" HorizontalAlignment="Left" Margin="192,182,0,0" VerticalAlignment="Top" Width="175" Click="buttonLogIn_Click"/>
         <Label x:Name="labelForgot" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top">
             <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
                 Forgot your password?
             </Hyperlink>
         </Label>
-        <Label x:Name="labelSignUp" HorizontalAlignment="Left" Margin="292,242,0,0" VerticalAlignment="Top">
+        <Label x:Name="labelSignUp" HorizontalAlignment="Left" Margin="317,242,0,0" VerticalAlignment="Top">
             <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
                 Sign Up
             </Hyperlink>
         </Label>
-        <Image x:Name="image1" HorizontalAlignment="Left" Source="Pictures/User.png" Height="23" Margin="160,67,0,0" VerticalAlignment="Top" Width="27"/>
-        <Image x:Name="image2" HorizontalAlignment="Left" Source="Pictures/LockOpen.png" Height="19" Margin="160,128,0,0" VerticalAlignment="Top" Width="27"/>
+        <Image x:Name="imageUser" HorizontalAlignment="Left" Source="Pictures/User.png" Height="23" Margin="160,67,0,0" VerticalAlignment="Top" Width="27"/>
+        <Image x:Name="imageLockOpen" HorizontalAlignment="Left" Source="Pictures/LockOpen.png" Height="19" Margin="160,128,0,0" VerticalAlignment="Top" Width="27"/>
         <Label x:Name="labelLogIn" FontSize="24" Content="Log In" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Window>

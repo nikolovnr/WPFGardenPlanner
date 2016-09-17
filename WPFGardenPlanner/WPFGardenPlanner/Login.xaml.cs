@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace WPFGardenPlanner
 {
@@ -22,12 +24,6 @@ namespace WPFGardenPlanner
         {
             InitializeComponent();
             Title = "Login window";
-
-        }
-
-        private void buttonLogIn_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
@@ -36,110 +32,65 @@ namespace WPFGardenPlanner
             e.Handled = true;
             //TODO: Change the address of the URL in XAML
         }
-    }
-    public class WaterMarkTextHelper : DependencyObject
-    {
-        #region Attached Properties
 
-        public static bool GetIsMonitoring(DependencyObject obj)
+        private void textBoxEMail_LostFocus(object sender, RoutedEventArgs e)
         {
-            return (bool)obj.GetValue(IsMonitoringProperty);
-        }
-
-        public static void SetIsMonitoring(DependencyObject obj, bool value)
-        {
-            obj.SetValue(IsMonitoringProperty, value);
-        }
-
-        public static readonly DependencyProperty IsMonitoringProperty =
-            DependencyProperty.RegisterAttached("IsMonitoring", typeof(bool), typeof(WaterMarkTextHelper), new UIPropertyMetadata(false, OnIsMonitoringChanged));
-
-
-        public static bool GetWatermarkText(DependencyObject obj)
-        {
-            return (bool)obj.GetValue(WatermarkTextProperty);
-        }
-
-        public static void SetWatermarkText(DependencyObject obj, string value)
-        {
-            obj.SetValue(WatermarkTextProperty, value);
-        }
-
-        public static readonly DependencyProperty WatermarkTextProperty =
-            DependencyProperty.RegisterAttached("WatermarkText", typeof(string), typeof(WaterMarkTextHelper), new UIPropertyMetadata(string.Empty));
-
-
-        public static int GetTextLength(DependencyObject obj)
-        {
-            return (int)obj.GetValue(TextLengthProperty);
-        }
-
-        public static void SetTextLength(DependencyObject obj, int value)
-        {
-            obj.SetValue(TextLengthProperty, value);
-
-            if (value >= 1)
-                obj.SetValue(HasTextProperty, true);
-            else
-                obj.SetValue(HasTextProperty, false);
-        }
-
-        public static readonly DependencyProperty TextLengthProperty =
-            DependencyProperty.RegisterAttached("TextLength", typeof(int), typeof(WaterMarkTextHelper), new UIPropertyMetadata(0));
-
-        #endregion
-
-        #region Internal DependencyProperty
-
-        public bool HasText
-        {
-            get { return (bool)GetValue(HasTextProperty); }
-            set { SetValue(HasTextProperty, value); }
-        }
-
-        private static readonly DependencyProperty HasTextProperty =
-            DependencyProperty.RegisterAttached("HasText", typeof(bool), typeof(WaterMarkTextHelper), new FrameworkPropertyMetadata(false));
-
-        #endregion
-
-        #region Implementation
-
-        static void OnIsMonitoringChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-        {
-            if (d is TextBox)
+            if (string.IsNullOrEmpty(textBoxEMail.Text))
             {
-                TextBox txtBox = d as TextBox;
-
-                if ((bool)e.NewValue)
-                    txtBox.TextChanged += TextChanged;
-                else
-                    txtBox.TextChanged -= TextChanged;
-            }
-            else if (d is PasswordBox)
-            {
-                PasswordBox passBox = d as PasswordBox;
-
-                if ((bool)e.NewValue)
-                    passBox.PasswordChanged += PasswordChanged;
-                else
-                    passBox.PasswordChanged -= PasswordChanged;
+                textBoxEMail.Visibility = System.Windows.Visibility.Collapsed;
+                waterMarkedEMail.Visibility = System.Windows.Visibility.Visible;
             }
         }
 
-        static void TextChanged(object sender, TextChangedEventArgs e)
+        private void waterMarkedEMail_GotFocus(object sender, RoutedEventArgs e)
         {
-            TextBox txtBox = sender as TextBox;
-            if (txtBox == null) return;
-            SetTextLength(txtBox, txtBox.Text.Length);
+            waterMarkedEMail.Visibility = System.Windows.Visibility.Collapsed;
+            textBoxEMail.Visibility = System.Windows.Visibility.Visible;
+            textBoxEMail.Focus();
         }
 
-        static void PasswordChanged(object sender, RoutedEventArgs e)
+        private void passwordBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            PasswordBox passBox = sender as PasswordBox;
-            if (passBox == null) return;
-            SetTextLength(passBox, passBox.Password.Length);
+            if (string.IsNullOrEmpty(passwordBox.Password))
+            {
+                passwordBox.Visibility = System.Windows.Visibility.Collapsed;
+                waterMarkedPassword.Visibility = System.Windows.Visibility.Visible;
+            }
         }
 
-        #endregion
+        private void waterMarkedPassword_GotFocus(object sender, RoutedEventArgs e)
+        {
+            waterMarkedPassword.Visibility = System.Windows.Visibility.Collapsed;
+            passwordBox.Visibility = System.Windows.Visibility.Visible;
+            passwordBox.Focus();
+        }
+
+        private void buttonLogIn_Click(object sender, RoutedEventArgs e)
+        {
+            string email = textBoxEMail.Text;
+            string password = passwordBox.Password;
+            SqlConnection conn = new SqlConnection("Data Source=desrosiers.database.windows.net;Initial Catalog=gardenplanner;Integrated Security=False;User ID=sqladmin;Password=16Avril1889;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            conn.Open();
+            using (SqlCommand cmd = new SqlCommand("SELECT * FROM Customer WHERE Email=@Email AND Password=@Password", conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = cmd;
+                DataSet dataSet = new DataSet();
+                adapter.Fill(dataSet);
+
+                if (dataSet.Tables[0].Rows.Count == 0)
+                {
+                    MessageBox.Show("Sorry! Please enter existing email/password.");
+                }
+                else
+                {
+                    conn.Close();
+                    Window Main = new Window();
+                    Main.Show();
+                    this.Close();
+                }
+            }
+        }
     }
 }
