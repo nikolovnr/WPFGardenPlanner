@@ -1,0 +1,8 @@
+diff a/WPFGardenPlanner/WPFGardenPlanner/Database.cs b/WPFGardenPlanner/WPFGardenPlanner/Database.cs	(rejected hunks)
+@@ -211,6 +211,5 @@
+             }
+             return p;
+         }
+-            cmd.Parameters.AddWithValue("@GardenID", GardenID);
+     }
+ }
