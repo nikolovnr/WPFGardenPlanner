@@ -19,7 +19,6 @@ namespace GardenPlanner
     {
         public int GardenId { get; set; }
         public string Name { get; set; }
-        //public double Size { get; set; }
         public int PlantHardinessZone { get; set; }
         public DateTime LastSpringFrostDate { get; set; }
         public DateTime FirstFallFrostDate { get; set; }
@@ -78,45 +77,34 @@ namespace GardenPlanner
                 cmd.ExecuteNonQuery();
             }
         }
-        /*public int GardenId { get; set; }
-        public string Name { get; set; }
-        //public double Size { get; set; }
-        public int PlantHardinessZone { get; set; }
-        public DateTime LastSpringFrostDate { get; set; }
-        public DateTime FirstFallFrostDate { get; set; }
-        public int FrostFreeGrowingSeason { get; set; }*/
-
+        
         public void AddGarden(Garden g)
         {
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Garden(Name, Size, PlantHardinessZone, LastSpringFrostDate, FirstFallFrostDate, FrostFreeGrowingSeason) VALUES (@Name, @Size, @PlantHardinessZone, @LastSpringFrostDate, @FirstFallFrostDate, @FrostFreeGrowingSeason)"))
             { 
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conn;
-                cmd.Parameters.AddWithValue("@UserName", g.Name);
-                cmd.Parameters.AddWithValue("@Email", g.PlantHardinessZone);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@Name", g.Name);
+                cmd.Parameters.AddWithValue("@PlantHardinessZone", g.PlantHardinessZone);
+                cmd.Parameters.AddWithValue("@LastSpringFrostDate", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@FirstFallFrostDate", g.FirstFallFrostDate);
+                cmd.Parameters.AddWithValue("@FrostFreeGrowingSeason", g.FrostFreeGrowingSeason);
                 cmd.ExecuteNonQuery();
             }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }       
+    
         public void AddBed(Bed b)
         {
-            throw new NotImplementedException();
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO Bed(BedName, Garden_Id, Shape, Size) VALUES (@BedName, @Garden_Id, @Shape, @Size)"))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conn;
+                cmd.Parameters.AddWithValue("@BedName", b.BedName);
+                cmd.Parameters.AddWithValue("@Garden_Id", b.Garden_Id);
+                cmd.Parameters.AddWithValue("@Shape", b.Shape);
+                //cmd.Parameters.AddWithValue("@Size", b.Size);
+                cmd.ExecuteNonQuery();
+            }
         }
 
         public List<Bed> GetAllBeds()
