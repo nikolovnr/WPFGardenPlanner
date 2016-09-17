@@ -19,7 +19,6 @@ namespace GardenPlanner
     {
         public int GardenId { get; set; }
         public string Name { get; set; }
-        //public double Size { get; set; }
         public int PlantHardinessZone { get; set; }
         public DateTime LastSpringFrostDate { get; set; }
         public DateTime FirstFallFrostDate { get; set; }
@@ -79,114 +78,44 @@ namespace GardenPlanner
                 cmd.ExecuteNonQuery();
             }
         }
-        /*public int GardenId { get; set; }
-        public string Name { get; set; }
-        //public double Size { get; set; }
-        public int PlantHardinessZone { get; set; }
-        public DateTime LastSpringFrostDate { get; set; }
-        public DateTime FirstFallFrostDate { get; set; }
-        public int FrostFreeGrowingSeason { get; set; }*/
-
+        
         public void AddGarden(Garden g)
         {
             using (SqlCommand cmd = new SqlCommand("INSERT INTO Garden(Name, Size, PlantHardinessZone, LastSpringFrostDate, FirstFallFrostDate, FrostFreeGrowingSeason) VALUES (@Name, @Size, @PlantHardinessZone, @LastSpringFrostDate, @FirstFallFrostDate, @FrostFreeGrowingSeason)"))
             { 
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Connection = conn;
-                cmd.Parameters.AddWithValue("@UserName", g.Name);
-                cmd.Parameters.AddWithValue("@Email", g.PlantHardinessZone);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
-                cmd.Parameters.AddWithValue("@Password", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@Name", g.Name);
+                cmd.Parameters.AddWithValue("@PlantHardinessZone", g.PlantHardinessZone);
+                cmd.Parameters.AddWithValue("@LastSpringFrostDate", g.LastSpringFrostDate);
+                cmd.Parameters.AddWithValue("@FirstFallFrostDate", g.FirstFallFrostDate);
+                cmd.Parameters.AddWithValue("@FrostFreeGrowingSeason", g.FrostFreeGrowingSeason);
+                cmd.ExecuteNonQuery();
+            }
+        }       
+    
+        public void AddBed(Bed b)
+        {
+            using (SqlCommand cmd = new SqlCommand("INSERT INTO Bed(BedName, Garden_Id, Shape, Size) VALUES (@BedName, @Garden_Id, @Shape, @Size)"))
+            {
+                cmd.CommandType = System.Data.CommandType.Text;
+                cmd.Connection = conn;
+                cmd.Parameters.AddWithValue("@BedName", b.BedName);
+                cmd.Parameters.AddWithValue("@Garden_Id", b.Garden_Id);
+                cmd.Parameters.AddWithValue("@Shape", b.Shape);
+                //cmd.Parameters.AddWithValue("@Size", b.Size);
                 cmd.ExecuteNonQuery();
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public void AddBed(Bed b)
+        public List<Bed> GetAllBeds()
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO Bed (Garden_Id, CoordinateX, CoordinateY, BedColor) VALUES (@GardenId, @CoordinateX, @CoordinateY, @BedColor)");
-            cmd.CommandType = System.Data.CommandType.Text;
-            cmd.Connection = conn;
-            cmd.Parameters.AddWithValue("@GardenId", b.GardenId);
-            cmd.Parameters.AddWithValue("@BedColor", b.PicSource);
-            cmd.Parameters.AddWithValue("@CoordinateX", b.CoordinateX);
-            cmd.Parameters.AddWithValue("@CoordinateY", b.CoordinateY);
-            cmd.ExecuteNonQuery();
+            throw new NotImplementedException();
         }
-        /*
-        public List<Bed> GetAllBeds(int id)
-        {
-            SqlCommand cmd = new SqlCommand("SELECT BedId, CoordinateX, CoordinateY, BedColor FROM Bed WHERE Garden_Id = @GardenId", conn);
-            cmd.Parameters.AddWithValue("@GardenId", id);
-            List<Bed> pList = new List<Bed>();
-            using (SqlDataReader reader = cmd.ExecuteReader())
-            {
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        // column by name - the better (preferred) way
-                        int id = reader.GetInt32(reader.GetOrdinal("PlantedId"));
-                        int gardenID = reader.GetInt32(reader.GetOrdinal("GardenId"));
-                        int plantId = reader.GetInt32(reader.GetOrdinal("Plant_Id"));
-                        int x = reader.GetInt32(reader.GetOrdinal("CoordinateX"));
-                        int y = reader.GetInt32(reader.GetOrdinal("CoordinateY"));
-                        string commonName = reader.GetString(reader.GetOrdinal("CommonName"));
-                        string picDest = reader.GetString(reader.GetOrdinal("PictureDest"));
 
-                        Plant p = new Plant() { Id = id, GardenId = gardenID, PlantId = plantId, CoordinateX = x, CoordinateY = y, Name = commonName, PicSource = picDest };
-                        pList.Add(p);
-                    }
-                }
-            }
-            return pList;
-        }
-        */
-
-        public List<Bed> GetBedByGardenId(int Id)
+        public Bed GetBedById(int Id)
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Bed WHERE Garden_Id = @Id", conn);
-            cmd.Parameters.AddWithValue("@Id", Id);
-            List<Bed> b = new List<Bed>();
-            try
-            {
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    if (reader.HasRows)
-                    {
-                        while (reader.Read())
-                        {
-                            //int id = reader.GetInt32(reader.GetOrdinal("PlantId"));
-                            //string bedName = reader.GetString(reader.GetOrdinal("BedName"));
-                            int cX = reader.GetInt32(reader.GetOrdinal("CoordinateX"));
-                            int cY = reader.GetInt32(reader.GetOrdinal("CoordinateY"));
-                            string picSource = reader.GetString(reader.GetOrdinal("BedColor"));
-                            Bed p = new Bed() { GardenId = Id, CoordinateX = cX, CoordinateY = cY, PicSource = picSource };
-                            b.Add(p);
-                            
-                        }
-                    }
-                    return b;
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            return b;
+            throw new NotImplementedException();
         }
 
         public void DeleteBedById(int id)

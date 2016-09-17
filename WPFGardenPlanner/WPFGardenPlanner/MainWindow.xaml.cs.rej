@@ -1,0 +1,11 @@
+diff a/WPFGardenPlanner/WPFGardenPlanner/MainWindow.xaml.cs b/WPFGardenPlanner/WPFGardenPlanner/MainWindow.xaml.cs	(rejected hunks)
+@@ -411,6 +411,9 @@
+                     if (seededPlants[col, row] != null)
+                     {
+                         db.AddPlant(seededPlants[col, row]);
++                    }
++                    if (buildBeds[col, row] != null)
++                    {
+                         db.AddBed(buildBeds[col, row]);
+                     }
+                 }
