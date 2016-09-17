@@ -28,10 +28,11 @@ namespace GardenPlanner
     public class Bed
     {
         public int BedId { get; set; }
-        public string BedName { get; set; }
-        public int Garden_Id { get; set; }
-        public string Shape { get; set; }
-        //public numeric? Size { get; set; }
+        public int GardenId { get; set; }
+        public string Name { get; set; }
+        public int CoordinateX { get; set; }
+        public int CoordinateY { get; set; }
+        public string PicSource { get; set; }
     }
 
     public class Plant
@@ -211,5 +212,42 @@ namespace GardenPlanner
             }
             return p;
         }
+
+        public void DeleteAllPlantsFromGarden(int GardenID)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Planted WHERE GardenId = @GardenID", conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@GardenID", GardenID);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteAllBedsFromGarden(int GardenID)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Bed WHERE Garden_Id = @GardenID", conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@GardenID", GardenID);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteAllPlantsFromGarden(int GardenID)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Planted WHERE GardenId = @GardenID", conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@GardenID", GardenID);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteAllBedsFromGarden(int GardenID)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Bed WHERE Garden_Id = @GardenID", conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@GardenID", GardenID);
+            cmd.ExecuteNonQuery();
+        }
+            cmd.Parameters.AddWithValue("@GardenID", GardenID);
     }
 }
